@@ -151,7 +151,7 @@ const Plans = () => {
 
         <div className="text-center mt-12">
           <p className="text-white/70 font-rethink mb-4">
-            * Equipamento incluso na mensalidade | Instalação gratuita | Sem taxa de adesão
+            * Equipamento incluso na mensalidade | Instalação gratuita | Sem taxa de fidelidade
           </p>
           <p className="text-primary font-rethink">
             Desconto especial para frotas acima de 10 veículos - Entre em contato!

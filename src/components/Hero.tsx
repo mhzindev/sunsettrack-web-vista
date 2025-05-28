@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
 
@@ -88,8 +87,8 @@ const Hero = () => {
                       <span className="text-primary font-rethink">45 km/h</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-white/80 font-rethink">Combustível</span>
-                      <span className="text-primary font-rethink">85%</span>
+                      <span className="text-white/80 font-rethink">Ignição</span>
+                      <span className="text-primary font-rethink">Ligada</span>
                     </div>
                   </div>
                   
