@@ -1,4 +1,5 @@
 
+
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const ClientLogos = () => {
@@ -7,7 +8,10 @@ const ClientLogos = () => {
     "TERRA FORTE", 
     "PCM FRIOS",
     "JR TRANSPORTES",
-    "TERRA MATA"
+    "TERRA MATA",
+    "NÁDIA RURAL",
+    "PROAGRO",
+    "D'MILA"
   ];
 
   return (
@@ -58,3 +62,4 @@ const ClientLogos = () => {
 };
 
 export default ClientLogos;
+
