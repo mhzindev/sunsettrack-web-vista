@@ -70,7 +70,7 @@ const Header = () => {
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <button className="lg:hidden text-white p-2">
-                <img alt="Menu" className="w-6 h-6" src="/lovable-uploads/0c6d8856-7203-4f2c-8f01-7eb2c1845fe3.png" />
+                <img alt="Menu" src="/lovable-uploads/0c6d8856-7203-4f2c-8f01-7eb2c1845fe3.png" className="w-16 h-10" />
               </button>
             </SheetTrigger>
             
