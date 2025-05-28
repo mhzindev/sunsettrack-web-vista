@@ -1,7 +1,5 @@
-
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
-
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -11,17 +9,11 @@ const Hero = () => {
       });
     }
   };
-
-  return (
-    <section id="home" className="min-h-screen bg-gradient-to-br from-darker-blue via-dark-blue to-darker-blue relative overflow-hidden">
+  return <section id="home" className="min-h-screen bg-gradient-to-br from-darker-blue via-dark-blue to-darker-blue relative overflow-hidden">
       {/* Globe Background Image */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-[800px] h-[800px] opacity-60">
-          <img 
-            src="/lovable-uploads/16637410-bfb0-4b07-8e40-50bc8e74b9d3.png" 
-            alt="Globe"
-            className="w-full h-full object-contain"
-          />
+          <img src="/lovable-uploads/16637410-bfb0-4b07-8e40-50bc8e74b9d3.png" alt="Globe" className="w-full h-full object-contain" />
         </div>
       </div>
 
@@ -38,7 +30,7 @@ const Hero = () => {
             <div className="text-center lg:text-left animate-fade-in">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-rethink leading-tight">
                 Rastreamento que
-                <span className="bg-gradient-to-r from-blue-400 via-blue-600 to-indigo-600 bg-clip-text text-transparent block">Protege Sua Frota</span>
+                <span className="bg-gradient-to-r from-blue-500 via-blue-700 to-blue-800 bg-clip-text text-transparent block">Protege Sua Frota</span>
               </h1>
               
               <p className="text-xl text-white/80 mb-8 font-rethink max-w-lg">
@@ -107,8 +99,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
