@@ -12,8 +12,8 @@ const Hero = () => {
   return <section id="home" className="min-h-screen bg-gradient-to-br from-darker-blue via-dark-blue to-darker-blue relative overflow-hidden">
       {/* Globe Background Image */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-[800px] h-[800px] opacity-60">
-          <img src="/lovable-uploads/16637410-bfb0-4b07-8e40-50bc8e74b9d3.png" alt="Globe" className="w-full h-full object-contain" />
+        <div className="w-full h-full min-w-[100vw] min-h-[100vh]">
+          <img src="/lovable-uploads/16637410-bfb0-4b07-8e40-50bc8e74b9d3.png" alt="Globe" className="w-full h-full object-cover" />
         </div>
       </div>
 
