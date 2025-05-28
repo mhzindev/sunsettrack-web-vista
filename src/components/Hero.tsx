@@ -1,5 +1,7 @@
+
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
+
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -9,7 +11,33 @@ const Hero = () => {
       });
     }
   };
-  return <section id="home" className="min-h-screen bg-gradient-to-br from-darker-blue via-dark-blue to-darker-blue relative overflow-hidden">
+
+  return (
+    <section id="home" className="min-h-screen bg-gradient-to-br from-darker-blue via-dark-blue to-darker-blue relative overflow-hidden">
+      {/* Globe Background */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="w-[800px] h-[800px] rounded-full bg-gradient-to-br from-blue-600/20 via-blue-500/10 to-transparent opacity-60 blur-sm"></div>
+        <div className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-primary/30 via-blue-400/20 to-transparent"></div>
+        
+        {/* Globe Grid Lines */}
+        <div className="absolute w-[600px] h-[600px] rounded-full border border-blue-400/20"></div>
+        <div className="absolute w-[600px] h-[600px] rounded-full border-2 border-blue-300/10 transform rotate-45"></div>
+        <div className="absolute w-[500px] h-[500px] rounded-full border border-blue-300/15 transform rotate-12"></div>
+        <div className="absolute w-[400px] h-[400px] rounded-full border border-blue-300/10 transform -rotate-12"></div>
+        
+        {/* Horizontal grid lines */}
+        <div className="absolute w-[600px] h-px bg-gradient-to-r from-transparent via-blue-300/20 to-transparent top-1/2 transform -translate-y-1/2"></div>
+        <div className="absolute w-[550px] h-px bg-gradient-to-r from-transparent via-blue-300/15 to-transparent top-1/2 transform -translate-y-12"></div>
+        <div className="absolute w-[550px] h-px bg-gradient-to-r from-transparent via-blue-300/15 to-transparent top-1/2 transform translate-y-12"></div>
+        <div className="absolute w-[480px] h-px bg-gradient-to-r from-transparent via-blue-300/10 to-transparent top-1/2 transform -translate-y-24"></div>
+        <div className="absolute w-[480px] h-px bg-gradient-to-r from-transparent via-blue-300/10 to-transparent top-1/2 transform translate-y-24"></div>
+        
+        {/* Vertical grid lines */}
+        <div className="absolute h-[600px] w-px bg-gradient-to-b from-transparent via-blue-300/20 to-transparent left-1/2 transform -translate-x-1/2"></div>
+        <div className="absolute h-[550px] w-px bg-gradient-to-b from-transparent via-blue-300/15 to-transparent left-1/2 transform -translate-x-12"></div>
+        <div className="absolute h-[550px] w-px bg-gradient-to-b from-transparent via-blue-300/15 to-transparent left-1/2 transform translate-x-12"></div>
+      </div>
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl"></div>
@@ -23,7 +51,7 @@ const Hero = () => {
             <div className="text-center lg:text-left animate-fade-in">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-rethink leading-tight">
                 Rastreamento que
-                <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent text-transparent block">Protege Sua Frota</span>
+                <span className="bg-gradient-to-r from-purple-400 via-purple-600 to-indigo-600 bg-clip-text text-transparent block">Protege Sua Frota</span>
               </h1>
               
               <p className="text-xl text-white/80 mb-8 font-rethink max-w-lg">
@@ -92,6 +120,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
