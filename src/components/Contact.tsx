@@ -1,10 +1,7 @@
-
 import { Button } from '@/components/ui/button';
 import { Phone, ExternalLink } from 'lucide-react';
-
 const Contact = () => {
-  return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-dark-blue to-darker-blue">
+  return <section id="contact" className="py-20 bg-gradient-to-br from-dark-blue to-darker-blue">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-rethink">
@@ -76,7 +73,7 @@ const Contact = () => {
                 Solicitar Orçamento
               </Button>
               
-              <Button variant="outline" size="lg" onClick={() => window.open('https://rastreame.com.br/#/sunsettrack', '_blank')} className="border-white text-white hover:bg-white hover:text-dark-blue px-8 py-3 font-rethink">
+              <Button variant="outline" size="lg" onClick={() => window.open('https://rastreame.com.br/#/sunsettrack', '_blank')} className="border-white text-dark-blue px-8 py-3 font-rethink">
                 <ExternalLink className="w-5 h-5 mr-2" />
                 Área do Cliente
               </Button>
@@ -103,8 +100,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
