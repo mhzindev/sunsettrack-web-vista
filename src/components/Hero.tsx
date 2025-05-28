@@ -1,7 +1,5 @@
-
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
-
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -11,17 +9,11 @@ const Hero = () => {
       });
     }
   };
-
-  return (
-    <section id="home" className="min-h-screen bg-gradient-to-br from-darker-blue via-dark-blue to-darker-blue relative overflow-hidden">
+  return <section id="home" className="min-h-screen bg-gradient-to-br from-darker-blue via-dark-blue to-darker-blue relative overflow-hidden">
       {/* Globe Background Image with reduced opacity */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-full h-full min-w-[100vw] min-h-[100vh]">
-          <img 
-            src="/lovable-uploads/16637410-bfb0-4b07-8e40-50bc8e74b9d3.png" 
-            alt="Globe" 
-            className="w-full h-full object-cover opacity-40" 
-          />
+          <img src="/lovable-uploads/16637410-bfb0-4b07-8e40-50bc8e74b9d3.png" alt="Globe" className="w-full h-full object-cover opacity-40" />
         </div>
       </div>
 
@@ -44,9 +36,7 @@ const Hero = () => {
                 <span className="bg-gradient-to-r from-blue-500 via-blue-700 to-blue-800 bg-clip-text text-transparent block">Protege Sua Frota</span>
               </h1>
               
-              <p className="text-xl text-white/80 mb-8 font-rethink max-w-lg">
-                Tecnologia avançada em monitoramento veicular. Segurança, eficiência e controle total da sua frota em tempo real.
-              </p>
+              <p className="text-xl text-white/80 mb-8 font-rethink max-w-lg">Tecnologia avançada em rastreamento veicular. Segurança, eficiência e controle total da sua frota em tempo real.</p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-3 font-rethink" onClick={scrollToContact}>
@@ -63,11 +53,11 @@ const Hero = () => {
               <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-white/10">
                 <div className="text-center">
                   <div className="text-2xl md:text-3xl font-bold text-primary font-rethink">400+</div>
-                  <div className="text-sm text-white/60 font-rethink">Veículos Monitorados</div>
+                  <div className="text-sm text-white/60 font-rethink">Veículos rastreados</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl md:text-3xl font-bold text-primary font-rethink">24/7</div>
-                  <div className="text-sm text-white/60 font-rethink">Monitoramento</div>
+                  <div className="text-sm text-white/60 font-rethink">Rastreamento</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl md:text-3xl font-bold text-primary font-rethink">99.9%</div>
@@ -110,8 +100,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
