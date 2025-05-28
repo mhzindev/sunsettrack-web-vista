@@ -23,7 +23,7 @@ const Hero = () => {
             <div className="text-center lg:text-left animate-fade-in">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-rethink leading-tight">
                 Rastreamento que
-                <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent text-transparent block">Protege Sua Frota</span>
+                <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent text-transparent block">Protege Sua Frota</span>
               </h1>
               
               <p className="text-xl text-white/80 mb-8 font-rethink max-w-lg">
