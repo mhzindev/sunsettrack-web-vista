@@ -1,11 +1,10 @@
-
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const ClientLogos = () => {
   const clients = [
     {
       name: "IMPERAGRO",
-      logo: "/lovable-uploads/f2d7eddc-7e28-427f-b221-333544d1a4d0.png"
+      logo: "/lovable-uploads/c63e5c28-3d72-4e4e-9f9a-cdf1231d3676.png"
     },
     {
       name: "TERRA FORTE",
