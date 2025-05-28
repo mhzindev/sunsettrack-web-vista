@@ -1,5 +1,7 @@
+
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
+
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -9,13 +11,22 @@ const Hero = () => {
       });
     }
   };
-  return <section id="home" className="min-h-screen bg-gradient-to-br from-darker-blue via-dark-blue to-darker-blue relative overflow-hidden">
-      {/* Globe Background Image */}
+
+  return (
+    <section id="home" className="min-h-screen bg-gradient-to-br from-darker-blue via-dark-blue to-darker-blue relative overflow-hidden">
+      {/* Globe Background Image with reduced opacity */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-full h-full min-w-[100vw] min-h-[100vh]">
-          <img src="/lovable-uploads/16637410-bfb0-4b07-8e40-50bc8e74b9d3.png" alt="Globe" className="w-full h-full object-cover" />
+          <img 
+            src="/lovable-uploads/16637410-bfb0-4b07-8e40-50bc8e74b9d3.png" 
+            alt="Globe" 
+            className="w-full h-full object-cover opacity-40" 
+          />
         </div>
       </div>
+
+      {/* Dark overlay for better text contrast */}
+      <div className="absolute inset-0 bg-gradient-to-br from-darker-blue/70 via-dark-blue/50 to-darker-blue/70"></div>
 
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
@@ -99,6 +110,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
