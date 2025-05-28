@@ -76,7 +76,7 @@ const Header = () => {
             <SheetTrigger asChild>
               <button className="lg:hidden text-white p-2">
                 <img 
-                  src="/lovable-uploads/2cf40316-6fd6-46d4-afd0-2ecd3e5626d9.png" 
+                  src="/lovable-uploads/7f6a3e62-70c3-48e0-8473-9f356008e491.png" 
                   alt="Menu" 
                   className="w-6 h-6"
                 />
