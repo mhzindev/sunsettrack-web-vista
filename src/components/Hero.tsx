@@ -33,7 +33,7 @@ const Hero = () => {
             <div className="text-center lg:text-left animate-fade-in">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-rethink leading-tight">
                 Rastreamento que
-                <span className="bg-gradient-to-r from-blue-660 via-blue-700 to-blue-600 bg-clip-text text-transparent block">Protege Sua Frota</span>
+                <span className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 bg-clip-text text-transparent block">Protege Sua Frota</span>
               </h1>
               
               <p className="text-xl text-white/80 mb-8 font-rethink max-w-lg">Tecnologia avançada em rastreamento veicular. Segurança, eficiência e controle total da sua frota em tempo real.</p>
