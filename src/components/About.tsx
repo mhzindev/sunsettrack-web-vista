@@ -1,7 +1,5 @@
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 bg-darker-blue">
+  return <section id="about" className="py-20 bg-darker-blue">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -16,11 +14,7 @@ const About = () => {
                 pelo alto índice de recuperação de veículos roubados e pela excelência em tecnologia de rastreamento.
               </p>
               
-              <p className="text-white/70 mb-8 font-rethink leading-relaxed">
-                Nossa missão é entregar segurança, controle e praticidade com tecnologia confiável. 
-                A plataforma S-PRO é intuitiva e acessível por celular, computador e tablet, 
-                oferecendo controle total e alertas inteligentes para nossos clientes.
-              </p>
+              <p className="text-white/70 mb-8 font-rethink leading-relaxed">Nossa missão é entregar segurança, controle e praticidade com tecnologia confiável. Nosso diferencial está na combinação de uma plataforma altamente intuitiva, que permite o monitoramento em tempo real por celular, computador ou tablet.</p>
 
               <div className="space-y-4">
                 <div className="flex items-center">
@@ -90,8 +84,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
