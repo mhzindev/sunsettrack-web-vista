@@ -94,7 +94,7 @@ const Footer = () => {
               </p>
               <button 
                 className="text-primary hover:text-primary/80 transition-colors font-rethink"
-                onClick={() => window.open('https://app.sunsettrack.com', '_blank')}
+                onClick={() => window.open('https://rastreame.com.br/#/sunsettrack', '_blank')}
               >
                 Área do Cliente
               </button>
