@@ -10,7 +10,7 @@ const ClientLogos = () => {
           </p>
         </div>
         
-        <div className="flex flex-wrap justify-center items-center gap-9 md:gap-14 opacity-70">
+        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-14 opacity-70">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/20">
             <span className="text-white/80 font-semibold font-rethink">IMPERAGRO</span>
           </div>
