@@ -1,17 +1,22 @@
 
+import { Satellite, Car, Smartphone } from 'lucide-react';
+
 const Technology = () => {
   const technologies = [
     {
+      icon: <Satellite className="w-8 h-8" />,
       title: "Dispositivos GSM e Satelital",
       description: "Conexão dupla garantindo cobertura total em áreas urbanas e remotas",
       features: ["Cobertura GSM urbana", "Rastreamento satelital", "Conexão redundante"]
     },
     {
+      icon: <Car className="w-8 h-8" />,
       title: "Compatibilidade Universal",
       description: "Nossos dispositivos funcionam em qualquer tipo de veículo",
       features: ["Carros e motos", "Caminhões e frotas", "Máquinas pesadas"]
     },
     {
+      icon: <Smartphone className="w-8 h-8" />,
       title: "Plataforma S-PRO",
       description: "Nossa plataforma própria com acesso total via celular, computador ou tablet",
       features: ["App mobile nativo", "Interface web", "Acesso multiplataforma"]
@@ -34,24 +39,26 @@ const Technology = () => {
           {technologies.map((tech, index) => (
             <div 
               key={index}
-              className="bg-darker-blue/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/20 hover:border-primary/40 transition-all duration-300"
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105"
             >
               <div className="mb-6">
-                <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mb-4">
-                  <div className="w-6 h-6 bg-primary rounded-full"></div>
+                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                  <div className="text-primary">
+                    {tech.icon}
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3 font-rethink">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4 font-rethink">
                   {tech.title}
                 </h3>
-                <p className="text-white/70 font-rethink mb-6">
+                <p className="text-gray-600 font-rethink mb-6 leading-relaxed">
                   {tech.description}
                 </p>
               </div>
 
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 {tech.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-white/80 font-rethink">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                  <li key={featureIndex} className="flex items-center text-gray-700 font-rethink">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></div>
                     {feature}
                   </li>
                 ))}
