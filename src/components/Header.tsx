@@ -1,7 +1,8 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, User } from 'lucide-react';
+import { X, User } from 'lucide-react';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,39 +71,63 @@ const Header = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden text-white"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+          {/* Mobile Menu */}
+          <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+            <SheetTrigger asChild>
+              <button className="lg:hidden text-white p-2">
+                <img 
+                  src="/lovable-uploads/2cf40316-6fd6-46d4-afd0-2ecd3e5626d9.png" 
+                  alt="Menu" 
+                  className="w-6 h-6"
+                />
+              </button>
+            </SheetTrigger>
+            
+            <SheetContent 
+              side="right" 
+              className="w-80 bg-darker-blue border-l border-primary/20 p-0"
+            >
+              <div className="flex flex-col h-full">
+                {/* Header do Menu */}
+                <div className="flex items-center justify-between p-6 border-b border-primary/20">
+                  <div className="text-xl font-bold text-white font-rethink">
+                    Sunset<span className="text-primary">track</span>
+                  </div>
+                </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t border-primary/20">
-            <nav className="flex flex-col space-y-3 mt-4">
-              {menuItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="text-white/80 hover:text-primary transition-colors duration-300 text-left font-rethink"
-                >
-                  {item.label}
-                </button>
-              ))}
-              <Button 
-                variant="outline" 
-                className="border-primary text-primary hover:bg-primary hover:text-white mt-4 w-full"
-                onClick={() => window.open('https://rastreame.com.br/#/sunsettrack', '_blank')}
-              >
-                <User className="w-4 h-4 mr-2" />
-                Área do Cliente
-              </Button>
-            </nav>
-          </div>
-        )}
+                {/* Navegação Mobile */}
+                <nav className="flex-1 py-6">
+                  <div className="space-y-1">
+                    {menuItems.map((item) => (
+                      <button
+                        key={item.id}
+                        onClick={() => scrollToSection(item.id)}
+                        className="w-full text-left px-6 py-4 text-white/80 hover:text-primary hover:bg-primary/10 transition-all duration-300 font-rethink border-l-2 border-transparent hover:border-primary"
+                      >
+                        {item.label}
+                      </button>
+                    ))}
+                  </div>
+                </nav>
+
+                {/* Botão Área do Cliente */}
+                <div className="p-6 border-t border-primary/20">
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-primary text-primary hover:bg-primary hover:text-white"
+                    onClick={() => {
+                      window.open('https://rastreame.com.br/#/sunsettrack', '_blank');
+                      setIsMenuOpen(false);
+                    }}
+                  >
+                    <User className="w-4 h-4 mr-2" />
+                    Área do Cliente
+                  </Button>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );
