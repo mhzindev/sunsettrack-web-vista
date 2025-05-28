@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
             {/* Content */}
             <div className="text-center lg:text-left animate-fade-in">
-              <h1 className="md:text-5xl lg:text-6xl text-white mb-6 font-rethink leading-tight py-0 my-[6px] mx-0 text-4xl font-bold text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-rethink leading-tight">
                 Rastreamento que
                 <span className="bg-gradient-to-r from-blue-500 via-blue-700 to-blue-800 bg-clip-text text-transparent block">Protege Sua Frota</span>
               </h1>
