@@ -64,7 +64,7 @@ const Technology = () => {
         <div className="bg-gradient-to-r from-primary/10 to-transparent rounded-3xl p-8 border border-primary/20">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2 font-rethink">< 30s</div>
+              <div className="text-3xl font-bold text-primary mb-2 font-rethink">&lt; 30s</div>
               <div className="text-white/80 font-rethink">Tempo de Resposta</div>
             </div>
             <div className="text-center">
