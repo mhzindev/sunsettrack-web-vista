@@ -1,16 +1,15 @@
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
-
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section id="home" className="min-h-screen bg-gradient-to-br from-darker-blue via-dark-blue to-darker-blue relative overflow-hidden">
+  return <section id="home" className="min-h-screen bg-gradient-to-br from-darker-blue via-dark-blue to-darker-blue relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl"></div>
@@ -32,20 +31,11 @@ const Hero = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button 
-                  size="lg" 
-                  className="bg-primary hover:bg-primary/90 text-white px-8 py-3 font-rethink"
-                  onClick={scrollToContact}
-                >
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-3 font-rethink" onClick={scrollToContact}>
                   Solicitar Orçamento
                 </Button>
                 
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="border-white text-white hover:bg-white hover:text-dark-blue px-8 py-3 font-rethink"
-                  onClick={() => window.open('https://wa.me/5599999350533', '_blank')}
-                >
+                <Button variant="outline" size="lg" onClick={() => window.open('https://wa.me/5599999350533', '_blank')} className="border-white text-dark-blue px-8 py-3 font-rethink">
                   <Phone className="w-5 h-5 mr-2" />
                   WhatsApp
                 </Button>
@@ -102,8 +92,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
