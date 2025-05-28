@@ -63,7 +63,7 @@ const Header = () => {
             <Button 
               variant="outline" 
               className="border-primary text-primary hover:bg-primary hover:text-white"
-              onClick={() => window.open('https://app.sunsettrack.com', '_blank')}
+              onClick={() => window.open('https://rastreame.com.br/#/sunsettrack', '_blank')}
             >
               <User className="w-4 h-4 mr-2" />
               Área do Cliente
@@ -95,7 +95,7 @@ const Header = () => {
               <Button 
                 variant="outline" 
                 className="border-primary text-primary hover:bg-primary hover:text-white mt-4 w-full"
-                onClick={() => window.open('https://app.sunsettrack.com', '_blank')}
+                onClick={() => window.open('https://rastreame.com.br/#/sunsettrack', '_blank')}
               >
                 <User className="w-4 h-4 mr-2" />
                 Área do Cliente

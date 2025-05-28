@@ -69,15 +69,10 @@ const Services = () => {
         </div>
 
         {/* Additional Services */}
-        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           <div className="bg-gradient-to-br from-primary/20 to-transparent rounded-2xl p-6 border border-primary/20">
             <h4 className="text-lg font-semibold text-white mb-3 font-rethink">Cerca Eletrônica</h4>
             <p className="text-white/70 font-rethink">Defina áreas permitidas e receba alertas automáticos quando o veículo sair da zona autorizada.</p>
-          </div>
-          
-          <div className="bg-gradient-to-br from-primary/20 to-transparent rounded-2xl p-6 border border-primary/20">
-            <h4 className="text-lg font-semibold text-white mb-3 font-rethink">Controle de Combustível</h4>
-            <p className="text-white/70 font-rethink">Monitore o consumo e evite furtos com sensores de alta precisão.</p>
           </div>
           
           <div className="bg-gradient-to-br from-primary/20 to-transparent rounded-2xl p-6 border border-primary/20">
