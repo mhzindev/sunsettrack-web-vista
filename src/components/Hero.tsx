@@ -52,7 +52,7 @@ const Hero = () => {
                   <div className="text-sm text-white/60 font-rethink">Monitoramento</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-primary font-rethink">98%</div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary font-rethink">99.9%</div>
                   <div className="text-sm text-white/60 font-rethink">Precisão GPS</div>
                 </div>
               </div>

@@ -50,8 +50,8 @@ const About = () => {
                     <div className="text-white/80 font-rethink text-sm">Anos de Mercado</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2 font-rethink">95%</div>
-                    <div className="text-white/80 font-rethink text-sm">Taxa de Recuperação</div>
+                    <div className="text-3xl font-bold text-primary mb-2 font-rethink">100%</div>
+                    <div className="text-white/80 font-rethink text-sm">Atual taxa de Recuperação</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary mb-2 font-rethink">24h</div>
