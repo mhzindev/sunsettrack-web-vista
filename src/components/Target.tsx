@@ -1,42 +1,31 @@
-
 import { Users } from 'lucide-react';
-
 const Target = () => {
-  const targets = [
-    {
-      title: "Empresas de Logística",
-      description: "Otimize rotas, reduza custos operacionais e melhore a eficiência da sua frota de entrega",
-      icon: "🚛"
-    },
-    {
-      title: "Transportadoras",
-      description: "Monitore cargas valiosas, garanta pontualidade e ofereça mais segurança aos clientes",
-      icon: "🚚"
-    },
-    {
-      title: "Frotas Corporativas",
-      description: "Controle veículos da empresa, monitore uso e garanta segurança dos colaboradores",
-      icon: "🚗"
-    },
-    {
-      title: "Prestadores de Serviço",
-      description: "Comprove presença em locais de trabalho e otimize deslocamentos entre clientes",
-      icon: "🔧"
-    },
-    {
-      title: "Veículos Pessoais",
-      description: "Proteja seu patrimônio familiar contra roubo e tenha controle sobre localização",
-      icon: "👨‍👩‍👧‍👦"
-    },
-    {
-      title: "Motocicletas e Motos",
-      description: "Solução específica para duas rodas com tecnologia adaptada e instalação discreta",
-      icon: "🏍️"
-    }
-  ];
-
-  return (
-    <section id="target" className="py-20 bg-gradient-to-br from-dark-blue to-darker-blue">
+  const targets = [{
+    title: "Empresas de Logística",
+    description: "Otimize rotas, reduza custos operacionais e melhore a eficiência da sua frota de entrega",
+    icon: "🚛"
+  }, {
+    title: "Transportadoras",
+    description: "Monitore cargas valiosas, garanta pontualidade e ofereça mais segurança aos clientes",
+    icon: "🚚"
+  }, {
+    title: "Frotas Corporativas",
+    description: "Controle veículos da empresa, monitore uso e garanta segurança dos colaboradores",
+    icon: "🚗"
+  }, {
+    title: "Prestadores de Serviço",
+    description: "Comprove presença em locais de trabalho e otimize deslocamentos entre clientes",
+    icon: "🔧"
+  }, {
+    title: "Veículos Pessoais",
+    description: "Proteja seu patrimônio familiar contra roubo e tenha controle sobre localização",
+    icon: "👨‍👩‍👧‍👦"
+  }, {
+    title: "Motocicletas e Motos",
+    description: "Solução específica para duas rodas com tecnologia adaptada e instalação discreta",
+    icon: "🏍️"
+  }];
+  return <section id="target" className="py-20 bg-gradient-to-br from-dark-blue to-darker-blue">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-rethink">
@@ -48,11 +37,7 @@ const Target = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {targets.map((target, index) => (
-            <div 
-              key={index}
-              className="bg-darker-blue/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:transform hover:scale-105"
-            >
+          {targets.map((target, index) => <div key={index} className="bg-darker-blue/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:transform hover:scale-105">
               <div className="text-4xl mb-4">{target.icon}</div>
               
               <h3 className="text-xl font-semibold text-white mb-4 font-rethink">
@@ -62,8 +47,7 @@ const Target = () => {
               <p className="text-white/70 font-rethink leading-relaxed">
                 {target.description}
               </p>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Benefits Section */}
@@ -99,7 +83,7 @@ const Target = () => {
                   <Users className="w-12 h-12 text-primary" />
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary mb-2 font-rethink">500+</div>
+                  <div className="text-2xl font-bold text-primary mb-2 font-rethink">250+</div>
                   <div className="text-white/80 font-rethink">Clientes Satisfeitos</div>
                 </div>
               </div>
@@ -107,8 +91,6 @@ const Target = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Target;
