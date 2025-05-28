@@ -35,16 +35,16 @@ const Technology = () => {
                     {tech.icon}
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-4 font-rethink">
+                <h3 className="text-xl font-semibold mb-4 font-rethink text-gray-50">
                   {tech.title}
                 </h3>
-                <p className="text-gray-600 font-rethink mb-6 leading-relaxed">
+                <p className="font-rethink mb-6 leading-relaxed text-slate-400">
                   {tech.description}
                 </p>
               </div>
 
               <ul className="space-y-3">
-                {tech.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-center text-gray-700 font-rethink">
+                {tech.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-center text-gray-50 font-rethink bg-transparent">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></div>
                     {feature}
                   </li>)}
