@@ -70,7 +70,7 @@ const Hero = () => {
                   <div className="space-y-3">
                     <div className="flex justify-between">
                       <span className="text-white/80 font-rethink">Localização</span>
-                      <span className="text-primary font-rethink">São Luís, MA</span>
+                      <span className="text-primary font-rethink">Imperatriz, MA</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-white/80 font-rethink">Velocidade</span>
