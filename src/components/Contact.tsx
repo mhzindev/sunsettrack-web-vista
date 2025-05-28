@@ -76,7 +76,7 @@ const Contact = () => {
                 Solicitar Orçamento
               </Button>
               
-              <Button variant="outline" size="lg" onClick={() => window.open('https://rastreame.com.br/#/sunsettrack', '_blank')} className="border-white text-dark-blue px-8 py-3 font-rethink">
+              <Button variant="outline" size="lg" onClick={() => window.open('https://rastreame.com.br/#/sunsettrack', '_blank')} className="border-white text-white hover:bg-white hover:text-dark-blue px-8 py-3 font-rethink">
                 <ExternalLink className="w-5 h-5 mr-2" />
                 Área do Cliente
               </Button>
