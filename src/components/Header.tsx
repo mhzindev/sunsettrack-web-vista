@@ -1,49 +1,44 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { X, User } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth'
-      });
+      element.scrollIntoView({ behavior: 'smooth' });
       setIsMenuOpen(false);
     }
   };
-  const menuItems = [{
-    label: 'Início',
-    id: 'home'
-  }, {
-    label: 'Serviços',
-    id: 'services'
-  }, {
-    label: 'Tecnologia',
-    id: 'technology'
-  }, {
-    label: 'Planos',
-    id: 'plans'
-  }, {
-    label: 'Público',
-    id: 'target'
-  }, {
-    label: 'Sobre',
-    id: 'about'
-  }, {
-    label: 'Contato',
-    id: 'contact'
-  }];
-  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-darker-blue/95 backdrop-blur-md border-b border-primary/20' : 'bg-transparent'}`}>
+
+  const menuItems = [
+    { label: 'Início', id: 'home' },
+    { label: 'Serviços', id: 'services' },
+    { label: 'Tecnologia', id: 'technology' },
+    { label: 'Planos', id: 'plans' },
+    { label: 'Público', id: 'target' },
+    { label: 'Sobre', id: 'about' },
+    { label: 'Contato', id: 'contact' }
+  ];
+
+  return (
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-darker-blue/95 backdrop-blur-md border-b border-primary/20' : 'bg-transparent'
+    }`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -53,14 +48,24 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            {menuItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="text-white/80 hover:text-primary transition-colors duration-300 font-rethink">
+            {menuItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className="text-white/80 hover:text-primary transition-colors duration-300 font-rethink"
+              >
                 {item.label}
-              </button>)}
+              </button>
+            ))}
           </nav>
 
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white" onClick={() => window.open('https://rastreame.com.br/#/sunsettrack', '_blank')}>
+            <Button 
+              variant="outline" 
+              className="border-primary text-primary hover:bg-primary hover:text-white"
+              onClick={() => window.open('https://rastreame.com.br/#/sunsettrack', '_blank')}
+            >
               <User className="w-4 h-4 mr-2" />
               Área do Cliente
             </Button>
@@ -69,12 +74,19 @@ const Header = () => {
           {/* Mobile Menu */}
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
-              <button className="lg:hidden text-white p-2 px-[2px] py-0">
-                <img src="/lovable-uploads/7f6a3e62-70c3-48e0-8473-9f356008e491.png" alt="Menu" className="w-20 h-12 object-contain" />
+              <button className="lg:hidden text-white p-2">
+                <img 
+                  src="/lovable-uploads/2cf40316-6fd6-46d4-afd0-2ecd3e5626d9.png" 
+                  alt="Menu" 
+                  className="w-6 h-6"
+                />
               </button>
             </SheetTrigger>
             
-            <SheetContent side="right" className="w-80 bg-darker-blue border-l border-primary/20 p-0">
+            <SheetContent 
+              side="right" 
+              className="w-80 bg-darker-blue border-l border-primary/20 p-0"
+            >
               <div className="flex flex-col h-full">
                 {/* Header do Menu */}
                 <div className="flex items-center justify-between p-6 border-b border-primary/20">
@@ -86,18 +98,28 @@ const Header = () => {
                 {/* Navegação Mobile */}
                 <nav className="flex-1 py-6">
                   <div className="space-y-1">
-                    {menuItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="w-full text-left px-6 py-4 text-white/80 hover:text-primary hover:bg-primary/10 transition-all duration-300 font-rethink border-l-2 border-transparent hover:border-primary">
+                    {menuItems.map((item) => (
+                      <button
+                        key={item.id}
+                        onClick={() => scrollToSection(item.id)}
+                        className="w-full text-left px-6 py-4 text-white/80 hover:text-primary hover:bg-primary/10 transition-all duration-300 font-rethink border-l-2 border-transparent hover:border-primary"
+                      >
                         {item.label}
-                      </button>)}
+                      </button>
+                    ))}
                   </div>
                 </nav>
 
                 {/* Botão Área do Cliente */}
                 <div className="p-6 border-t border-primary/20">
-                  <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-white" onClick={() => {
-                  window.open('https://rastreame.com.br/#/sunsettrack', '_blank');
-                  setIsMenuOpen(false);
-                }}>
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-primary text-primary hover:bg-primary hover:text-white"
+                    onClick={() => {
+                      window.open('https://rastreame.com.br/#/sunsettrack', '_blank');
+                      setIsMenuOpen(false);
+                    }}
+                  >
                     <User className="w-4 h-4 mr-2" />
                     Área do Cliente
                   </Button>
@@ -107,6 +129,8 @@ const Header = () => {
           </Sheet>
         </div>
       </div>
-    </header>;
+    </header>
+  );
 };
+
 export default Header;
