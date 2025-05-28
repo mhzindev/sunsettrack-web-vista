@@ -1,17 +1,40 @@
 
-
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const ClientLogos = () => {
   const clients = [
-    "IMPERAGRO",
-    "TERRA FORTE", 
-    "PCM FRIOS",
-    "JR TRANSPORTES",
-    "TERRA MATA",
-    "NÁDIA RURAL",
-    "PROAGRO",
-    "D'MILA"
+    {
+      name: "IMPERAGRO",
+      logo: "/lovable-uploads/f2d7eddc-7e28-427f-b221-333544d1a4d0.png"
+    },
+    {
+      name: "TERRA FORTE",
+      logo: "/lovable-uploads/981747a6-e3eb-4df4-b632-018f7cf0c703.png"
+    },
+    {
+      name: "PCM FRIOS",
+      logo: "/lovable-uploads/2581c9e9-22e7-4871-8084-898db8ce4e52.png"
+    },
+    {
+      name: "JR TRANSPORTES",
+      logo: "/lovable-uploads/48b2777d-dee4-4f41-b703-80497a1f177c.png"
+    },
+    {
+      name: "TERRA MATA",
+      logo: "/lovable-uploads/981747a6-e3eb-4df4-b632-018f7cf0c703.png"
+    },
+    {
+      name: "NÁDIA RURAL",
+      logo: "/lovable-uploads/176031d1-0f86-4fbf-a64b-7a9f20009f89.png"
+    },
+    {
+      name: "PROAGRO",
+      logo: "/lovable-uploads/086e33d8-2635-4227-b19d-1a124628ab05.png"
+    },
+    {
+      name: "D'MILA",
+      logo: "/lovable-uploads/55034421-ae2a-4188-957e-02bf0a90f3bf.png"
+    }
   ];
 
   return (
@@ -44,9 +67,16 @@ const ClientLogos = () => {
               {clients.map((client, index) => (
                 <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                    <span className="text-white/80 font-semibold font-rethink text-center block">
-                      {client}
-                    </span>
+                    <div className="flex items-center justify-center gap-3">
+                      <img 
+                        src={client.logo} 
+                        alt={`Logo ${client.name}`}
+                        className="w-8 h-8 object-contain flex-shrink-0"
+                      />
+                      <span className="text-white/80 font-semibold font-rethink text-center">
+                        {client.name}
+                      </span>
+                    </div>
                   </div>
                 </CarouselItem>
               ))}
@@ -62,4 +92,3 @@ const ClientLogos = () => {
 };
 
 export default ClientLogos;
-
