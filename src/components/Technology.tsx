@@ -1,30 +1,22 @@
-
 import { Satellite, Car, Smartphone } from 'lucide-react';
-
 const Technology = () => {
-  const technologies = [
-    {
-      icon: <Satellite className="w-8 h-8" />,
-      title: "Dispositivos GSM e Satelital",
-      description: "Conexão dupla garantindo cobertura total em áreas urbanas e remotas",
-      features: ["Cobertura GSM urbana", "Rastreamento satelital", "Conexão redundante"]
-    },
-    {
-      icon: <Car className="w-8 h-8" />,
-      title: "Compatibilidade Universal",
-      description: "Nossos dispositivos funcionam em qualquer tipo de veículo",
-      features: ["Carros e motos", "Caminhões e frotas", "Máquinas pesadas"]
-    },
-    {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: "Plataforma S-PRO",
-      description: "Nossa plataforma própria com acesso total via celular, computador ou tablet",
-      features: ["App mobile nativo", "Interface web", "Acesso multiplataforma"]
-    }
-  ];
-
-  return (
-    <section id="technology" className="py-20 bg-gradient-to-br from-dark-blue to-darker-blue">
+  const technologies = [{
+    icon: <Satellite className="w-8 h-8" />,
+    title: "Dispositivos GSM e Satelital",
+    description: "Conexão dupla garantindo cobertura total em áreas urbanas e remotas",
+    features: ["Cobertura GSM urbana", "Rastreamento satelital", "Conexão redundante"]
+  }, {
+    icon: <Car className="w-8 h-8" />,
+    title: "Compatibilidade Universal",
+    description: "Nossos dispositivos funcionam em qualquer tipo de veículo",
+    features: ["Carros e motos", "Caminhões e frotas", "Máquinas pesadas"]
+  }, {
+    icon: <Smartphone className="w-8 h-8" />,
+    title: "Plataforma S-PRO",
+    description: "Nossa plataforma própria com acesso total via celular, computador ou tablet",
+    features: ["App mobile nativo", "Interface web", "Acesso multiplataforma"]
+  }];
+  return <section id="technology" className="py-20 bg-gradient-to-br from-dark-blue to-darker-blue">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-rethink">
@@ -36,11 +28,7 @@ const Technology = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
-          {technologies.map((tech, index) => (
-            <div 
-              key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105"
-            >
+          {technologies.map((tech, index) => <div key={index} className="bg-gradient-to-br from-primary/20 to-transparent rounded-2xl p-6 border border-primary/20">
               <div className="mb-6">
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
                   <div className="text-primary">
@@ -56,15 +44,12 @@ const Technology = () => {
               </div>
 
               <ul className="space-y-3">
-                {tech.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-gray-700 font-rethink">
+                {tech.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-center text-gray-700 font-rethink">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></div>
                     {feature}
-                  </li>
-                ))}
+                  </li>)}
               </ul>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Technical Specs */}
@@ -89,8 +74,6 @@ const Technology = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Technology;
