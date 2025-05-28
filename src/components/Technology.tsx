@@ -2,19 +2,19 @@
 const Technology = () => {
   const technologies = [
     {
-      title: "GPS de Alta Precisão",
-      description: "Localização com precisão de até 3 metros utilizando satélites GPS e GLONASS",
-      features: ["Precisão de 98%", "Cobertura nacional", "Atualização em tempo real"]
+      title: "Dispositivos GSM e Satelital",
+      description: "Conexão dupla garantindo cobertura total em áreas urbanas e remotas",
+      features: ["Cobertura GSM urbana", "Rastreamento satelital", "Conexão redundante"]
     },
     {
-      title: "Conectividade 4G/5G",
-      description: "Transmissão de dados rápida e confiável através das melhores redes móveis",
-      features: ["Velocidade otimizada", "Baixo consumo", "Conexão estável"]
+      title: "Compatibilidade Universal",
+      description: "Nossos dispositivos funcionam em qualquer tipo de veículo",
+      features: ["Carros e motos", "Caminhões e frotas", "Máquinas pesadas"]
     },
     {
-      title: "Inteligência Artificial",
-      description: "Análise inteligente de padrões de uso e detecção de anomalias",
-      features: ["Alertas preditivos", "Análise comportamental", "Otimização de rotas"]
+      title: "Plataforma S-PRO",
+      description: "Nossa plataforma própria com acesso total via celular, computador ou tablet",
+      features: ["App mobile nativo", "Interface web", "Acesso multiplataforma"]
     }
   ];
 
@@ -77,7 +77,7 @@ const Technology = () => {
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2 font-rethink">24h</div>
-              <div className="text-white/80 font-rethink">Backup de Bateria</div>
+              <div className="text-white/80 font-rethink">Suporte Técnico</div>
             </div>
           </div>
         </div>

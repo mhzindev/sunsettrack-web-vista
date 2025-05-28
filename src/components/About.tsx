@@ -12,32 +12,32 @@ const About = () => {
               </h2>
               
               <p className="text-xl text-white/80 mb-6 font-rethink leading-relaxed">
-                Nossa missão é proteger e monitorar veículos com tecnologia de ponta, 
-                oferecendo soluções de rastreamento que geram valor real para nossos clientes.
+                Com mais de 10 anos de experiência no mercado, a Sunsettrack é reconhecida 
+                pelo alto índice de recuperação de veículos roubados e pela excelência em tecnologia de rastreamento.
               </p>
               
               <p className="text-white/70 mb-8 font-rethink leading-relaxed">
-                Com anos de experiência no mercado de rastreamento veicular, desenvolvemos 
-                um sistema completo que combina hardware de qualidade, software intuitivo 
-                e suporte especializado para garantir a melhor experiência em monitoramento.
+                Nossa missão é entregar segurança, controle e praticidade com tecnologia confiável. 
+                A plataforma S-PRO é intuitiva e acessível por celular, computador e tablet, 
+                oferecendo controle total e alertas inteligentes para nossos clientes.
               </p>
 
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className="w-3 h-3 bg-primary rounded-full mr-4"></div>
-                  <span className="text-white/80 font-rethink">Tecnologia nacional e internacional</span>
+                  <span className="text-white/80 font-rethink">Mais de 10 anos de experiência</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-primary rounded-full mr-4"></div>
+                  <span className="text-white/80 font-rethink">Alto índice de recuperação de veículos</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-primary rounded-full mr-4"></div>
+                  <span className="text-white/80 font-rethink">Plataforma própria S-PRO</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-3 h-3 bg-primary rounded-full mr-4"></div>
                   <span className="text-white/80 font-rethink">Suporte técnico especializado</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-primary rounded-full mr-4"></div>
-                  <span className="text-white/80 font-rethink">Instalação profissional</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-primary rounded-full mr-4"></div>
-                  <span className="text-white/80 font-rethink">Preços competitivos</span>
                 </div>
               </div>
             </div>
@@ -52,20 +52,20 @@ const About = () => {
                 
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2 font-rethink">5+</div>
+                    <div className="text-3xl font-bold text-primary mb-2 font-rethink">10+</div>
                     <div className="text-white/80 font-rethink text-sm">Anos de Mercado</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2 font-rethink">500+</div>
-                    <div className="text-white/80 font-rethink text-sm">Clientes Ativos</div>
+                    <div className="text-3xl font-bold text-primary mb-2 font-rethink">95%</div>
+                    <div className="text-white/80 font-rethink text-sm">Taxa de Recuperação</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary mb-2 font-rethink">24h</div>
                     <div className="text-white/80 font-rethink text-sm">Suporte Técnico</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2 font-rethink">99%</div>
-                    <div className="text-white/80 font-rethink text-sm">Satisfação</div>
+                    <div className="text-3xl font-bold text-primary mb-2 font-rethink">S-PRO</div>
+                    <div className="text-white/80 font-rethink text-sm">Plataforma Própria</div>
                   </div>
                 </div>
               </div>
@@ -73,16 +73,16 @@ const About = () => {
               {/* Values */}
               <div className="space-y-4">
                 <div className="bg-dark-blue/50 rounded-2xl p-6 border border-primary/20">
-                  <h4 className="text-lg font-semibold text-white mb-3 font-rethink">🎯 Nossa Visão</h4>
+                  <h4 className="text-lg font-semibold text-white mb-3 font-rethink">🎯 Nossa Missão</h4>
                   <p className="text-white/70 font-rethink">
-                    Ser referência em rastreamento veicular, oferecendo as melhores soluções em segurança e monitoramento.
+                    Entregar segurança, controle e praticidade com tecnologia confiável para proteção veicular.
                   </p>
                 </div>
                 
                 <div className="bg-dark-blue/50 rounded-2xl p-6 border border-primary/20">
-                  <h4 className="text-lg font-semibold text-white mb-3 font-rethink">💎 Nossos Valores</h4>
+                  <h4 className="text-lg font-semibold text-white mb-3 font-rethink">💎 Nossos Diferenciais</h4>
                   <p className="text-white/70 font-rethink">
-                    Transparência, qualidade, inovação e compromisso com a segurança dos nossos clientes.
+                    Suporte especializado, monitoramento em tempo real e gestão de frotas eficiente com plataforma própria.
                   </p>
                 </div>
               </div>

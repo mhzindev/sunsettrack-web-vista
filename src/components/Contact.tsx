@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { Phone } from 'lucide-react';
+import { Phone, ExternalLink } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -67,7 +67,7 @@ const Contact = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="bg-darker-blue/80 backdrop-blur-sm rounded-3xl p-8 border border-primary/20">
+          <div className="bg-darker-blue/80 backdrop-blur-sm rounded-3xl p-8 border border-primary/20 mb-12">
             <h3 className="text-2xl font-bold text-white mb-4 font-rethink">
               Pronto para Proteger sua Frota?
             </h3>
@@ -91,9 +91,37 @@ const Contact = () => {
                 variant="outline"
                 size="lg"
                 className="border-white text-white hover:bg-white hover:text-dark-blue px-8 py-3 font-rethink"
-                onClick={() => window.open('https://app.sunsettrack.com', '_blank')}
+                onClick={() => window.open('https://rastreame.com.br/#/sunsettrack', '_blank')}
               >
+                <ExternalLink className="w-5 h-5 mr-2" />
                 Área do Cliente
+              </Button>
+            </div>
+          </div>
+
+          {/* App Downloads */}
+          <div className="bg-gradient-to-r from-primary/10 to-transparent rounded-3xl p-8 border border-primary/20">
+            <h3 className="text-xl font-semibold text-white mb-6 font-rethink">
+              Baixe o App S-PRO
+            </h3>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 font-rethink"
+                onClick={() => window.open('https://play.google.com/store/apps/details?id=br.com.appselsyn.spro', '_blank')}
+              >
+                <ExternalLink className="w-5 h-5 mr-2" />
+                Google Play Store
+              </Button>
+              
+              <Button 
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 font-rethink"
+                onClick={() => window.open('https://apps.apple.com/br/app/s-pro/id1458113409', '_blank')}
+              >
+                <ExternalLink className="w-5 h-5 mr-2" />
+                App Store
               </Button>
             </div>
           </div>

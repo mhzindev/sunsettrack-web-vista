@@ -1,11 +1,11 @@
 
-import { Calendar, Search, User, Users } from 'lucide-react';
+import { Calendar, Search, Users, FileText, Smartphone, Bell } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       icon: <Search className="w-8 h-8" />,
-      title: "Monitoramento 24h",
+      title: "Rastreamento em tempo real 24h",
       description: "Acompanhamento em tempo real da localização e status dos seus veículos"
     },
     {
@@ -14,14 +14,24 @@ const Services = () => {
       description: "Relatórios detalhados de trajetos, paradas e deslocamentos"
     },
     {
-      icon: <User className="w-8 h-8" />,
+      icon: <Users className="w-8 h-8" />,
       title: "Gestão de Motoristas",
       description: "Controle de condutores, horários e comportamento de direção"
     },
     {
-      icon: <Users className="w-8 h-8" />,
+      icon: <Bell className="w-8 h-8" />,
       title: "Alertas Inteligentes",
-      description: "Notificações automáticas para eventos importantes e emergências"
+      description: "Alertas de movimento/ignição, excesso de velocidade e outros eventos importantes"
+    },
+    {
+      icon: <FileText className="w-8 h-8" />,
+      title: "Relatórios Personalizados",
+      description: "Relatórios detalhados e customizáveis para análise da sua frota"
+    },
+    {
+      icon: <Smartphone className="w-8 h-8" />,
+      title: "Aplicativo Completo S-PRO",
+      description: "App completo para celular com todas as funcionalidades de monitoramento"
     }
   ];
 
@@ -37,7 +47,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
               key={index}

@@ -1,53 +1,62 @@
 
 import { Button } from '@/components/ui/button';
-import { Check } from 'lucide-react';
+import { Check, Star } from 'lucide-react';
 
 const Plans = () => {
   const plans = [
     {
-      name: "Básico",
-      price: "R$ 29,90",
-      period: "/mês",
-      description: "Ideal para veículos pessoais",
+      name: "Plano GSM",
+      subtitle: "Recomendado",
+      description: "Rastreamento via rede de telefonia móvel",
+      activationPrice: "R$ 150,00",
+      monthlyPrice: "R$ 70,00",
       features: [
+        "Rastreamento via rede GSM",
+        "Ampla cobertura urbana",
         "Localização em tempo real",
-        "Histórico de 30 dias",
-        "Alertas básicos",
-        "Suporte por email",
-        "App mobile"
+        "Histórico de trajetos",
+        "Alertas inteligentes",
+        "App S-PRO incluso",
+        "Suporte técnico"
       ],
-      highlighted: false
+      highlighted: true,
+      coverage: "Cobertura urbana completa"
     },
     {
-      name: "Profissional",
-      price: "R$ 49,90",
-      period: "/mês",
-      description: "Perfeito para pequenas frotas",
+      name: "Plano Satelital",
+      subtitle: "",
+      description: "Rastreamento por satélite com cobertura global",
+      activationPrice: "R$ 600,00",
+      monthlyPrice: "R$ 200,00",
       features: [
-        "Tudo do plano Básico",
-        "Histórico de 90 dias",
-        "Relatórios avançados",
-        "Cerca eletrônica",
-        "Suporte prioritário",
-        "Múltiplos usuários"
+        "Rastreamento satelital",
+        "Cobertura global",
+        "Funciona em áreas remotas",
+        "Alta precisão",
+        "Localização em tempo real",
+        "App S-PRO incluso",
+        "Suporte especializado"
       ],
-      highlighted: true
+      highlighted: false,
+      coverage: "Funciona em qualquer lugar do mundo"
     },
     {
-      name: "Empresarial",
-      price: "R$ 89,90",
-      period: "/mês",
-      description: "Solução completa para frotas",
+      name: "GSM + Videomonitoramento",
+      subtitle: "",
+      description: "Rastreamento + câmeras de segurança",
+      activationPrice: "R$ 1.000,00",
+      monthlyPrice: "R$ 200,00",
       features: [
-        "Tudo do plano Profissional",
-        "Histórico ilimitado",
-        "API personalizada",
-        "Integração com sistemas",
-        "Suporte 24h",
-        "Treinamento incluso",
-        "Relatórios personalizados"
+        "Rastreamento GSM completo",
+        "Até 4 câmeras incluídas",
+        "Monitoramento visual em tempo real",
+        "Gravação de imagens",
+        "Alertas com foto",
+        "App S-PRO completo",
+        "Suporte prioritário"
       ],
-      highlighted: false
+      highlighted: false,
+      coverage: "Segurança visual completa"
     }
   ];
 
@@ -70,7 +79,7 @@ const Plans = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {plans.map((plan, index) => (
             <div 
               key={index}
@@ -82,8 +91,9 @@ const Plans = () => {
             >
               {plan.highlighted && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold font-rethink">
-                    Mais Popular
+                  <div className="bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold font-rethink flex items-center gap-2">
+                    <Star className="w-4 h-4 fill-current" />
+                    {plan.subtitle}
                   </div>
                 </div>
               )}
@@ -95,17 +105,28 @@ const Plans = () => {
                 <p className="text-white/70 font-rethink mb-6">
                   {plan.description}
                 </p>
-                <div className="flex items-end justify-center">
-                  <span className="text-4xl font-bold text-primary font-rethink">
-                    {plan.price}
-                  </span>
-                  <span className="text-white/70 font-rethink ml-1">
-                    {plan.period}
-                  </span>
+                
+                <div className="space-y-2 mb-6">
+                  <div className="flex items-center justify-between">
+                    <span className="text-white/80 font-rethink">Ativação:</span>
+                    <span className="text-xl font-bold text-primary font-rethink">
+                      {plan.activationPrice}
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-white/80 font-rethink">Mensalidade:</span>
+                    <span className="text-2xl font-bold text-primary font-rethink">
+                      {plan.monthlyPrice}
+                    </span>
+                  </div>
                 </div>
+                
+                <p className="text-sm text-white/60 font-rethink bg-white/5 rounded-lg p-2">
+                  {plan.coverage}
+                </p>
               </div>
 
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-3 mb-8">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center text-white/80 font-rethink">
                     <Check className="w-5 h-5 text-primary mr-3 flex-shrink-0" />
@@ -122,7 +143,7 @@ const Plans = () => {
                 }`}
                 onClick={scrollToContact}
               >
-                Contratar Plano
+                Quero este plano
               </Button>
             </div>
           ))}
