@@ -2,7 +2,7 @@ const ClientLogos = () => {
   return <section className="py-16 bg-dark-blue/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h3 className="text-4xl md:text-5xl font-bold mb-6 font-rethink text-gray-50">Nossos Clientes</h3>
+          <h3 className="text-4xl md:text-5xl font-bold mb-6 font-rethink text-gray-50">Alguns dos Nossos Clientes</h3>
           <p className="text-white/60 font-rethink">
             Empresas que confiam na nossa tecnologia
           </p>
