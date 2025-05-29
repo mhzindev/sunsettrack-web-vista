@@ -30,7 +30,7 @@ const FAQ = () => {
     },
     {
       question: "O que acontece se meu veículo for roubado?",
-      answer: "Nossa equipe atua imediatamente para recuperação do veículo. Com mais de 10 anos de experiência, mantemos uma das maiores taxas de recuperação do mercado, chegando a 95% de sucesso."
+      answer: "Nossa equipe atua imediatamente para recuperação do veículo. Com mais de 10 anos de experiência, mantemos uma das maiores taxas de recuperação do mercado, chegando a 100% de sucesso."
     },
     {
       question: "Posso cancelar o serviço a qualquer momento?",
