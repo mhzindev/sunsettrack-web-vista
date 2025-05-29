@@ -75,9 +75,7 @@ const About = () => {
                 
                 <div className="bg-dark-blue/50 rounded-2xl p-6 border border-primary/20">
                   <h4 className="text-lg font-semibold text-white mb-3 font-rethink">💎 Nossos Diferenciais</h4>
-                  <p className="text-white/70 font-rethink">
-                    Suporte especializado, monitoramento em tempo real e gestão de frotas eficiente com plataforma própria.
-                  </p>
+                  <p className="text-white/70 font-rethink">Suporte especializado, rastreamento em tempo real e gestão de frotas eficiente com plataforma própria.</p>
                 </div>
               </div>
             </div>
