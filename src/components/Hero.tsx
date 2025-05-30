@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
 const Hero = () => {
@@ -61,7 +60,7 @@ const Hero = () => {
                   <div className="text-sm text-white/60 font-rethink">Rastreamento</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-primary font-rethink">100%</div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary font-rethink">99.8%</div>
                   <div className="text-sm text-white/60 font-rethink">Precisão GPS</div>
                 </div>
               </div>
