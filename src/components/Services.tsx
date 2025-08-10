@@ -36,32 +36,32 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-darker-blue">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-rethink">
+    <section id="services" className="py-12 sm:py-16 lg:py-20 bg-darker-blue">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 font-rethink">
             Nossos <span className="text-primary">Serviços</span>
           </h2>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto font-rethink">
+          <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto font-rethink">
             Soluções completas em rastreamento veicular para atender todas as necessidades da sua empresa
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-dark-blue/50 backdrop-blur-sm rounded-2xl p-8 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:transform hover:scale-105"
+              className="bg-dark-blue/50 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:transform hover:scale-105 h-full"
             >
-              <div className="text-primary mb-6">
+              <div className="text-primary mb-4 sm:mb-6">
                 {service.icon}
               </div>
               
-              <h3 className="text-xl font-semibold text-white mb-4 font-rethink">
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4 font-rethink">
                 {service.title}
               </h3>
               
-              <p className="text-white/70 font-rethink leading-relaxed">
+              <p className="text-sm sm:text-base text-white/70 font-rethink leading-relaxed">
                 {service.description}
               </p>
             </div>
@@ -69,15 +69,15 @@ const Services = () => {
         </div>
 
         {/* Additional Services */}
-        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-          <div className="bg-gradient-to-br from-primary/20 to-transparent rounded-2xl p-6 border border-primary/20">
-            <h4 className="text-lg font-semibold text-white mb-3 font-rethink">Cerca Eletrônica</h4>
-            <p className="text-white/70 font-rethink">Defina áreas permitidas e receba alertas automáticos quando o veículo sair da zona autorizada.</p>
+        <div className="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <div className="bg-gradient-to-br from-primary/20 to-transparent rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-primary/20">
+            <h4 className="text-base sm:text-lg font-semibold text-white mb-2 sm:mb-3 font-rethink">Cerca Eletrônica</h4>
+            <p className="text-sm sm:text-base text-white/70 font-rethink">Defina áreas permitidas e receba alertas automáticos quando o veículo sair da zona autorizada.</p>
           </div>
           
-          <div className="bg-gradient-to-br from-primary/20 to-transparent rounded-2xl p-6 border border-primary/20">
-            <h4 className="text-lg font-semibold text-white mb-3 font-rethink">Bloqueio Remoto</h4>
-            <p className="text-white/70 font-rethink">Sistema de bloqueio à distância para proteção contra roubos e furtos.</p>
+          <div className="bg-gradient-to-br from-primary/20 to-transparent rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-primary/20">
+            <h4 className="text-base sm:text-lg font-semibold text-white mb-2 sm:mb-3 font-rethink">Bloqueio Remoto</h4>
+            <p className="text-sm sm:text-base text-white/70 font-rethink">Sistema de bloqueio à distância para proteção contra roubos e furtos.</p>
           </div>
         </div>
       </div>

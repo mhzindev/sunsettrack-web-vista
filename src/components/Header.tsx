@@ -49,10 +49,10 @@ const Header = () => {
   }];
 
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-darker-blue/95 backdrop-blur-md border-b border-primary/20' : 'bg-transparent'}`}>
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold text-white font-rethink">
+          <div className="text-xl sm:text-2xl font-bold text-white font-rethink">
             Sunset<span className="text-primary">track</span>
           </div>
 
@@ -65,9 +65,10 @@ const Header = () => {
 
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white" onClick={() => window.open('https://rastreame.com.br/#/sunsettrack', '_blank')}>
+            <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-white text-sm" onClick={() => window.open('https://rastreame.com.br/#/sunsettrack', '_blank')}>
               <User className="w-4 h-4 mr-2" />
-              Área do Cliente
+              <span className="hidden xl:inline">Área do Cliente</span>
+              <span className="xl:hidden">Cliente</span>
             </Button>
           </div>
 
@@ -79,7 +80,7 @@ const Header = () => {
               </button>
             </SheetTrigger>
             
-            <SheetContent side="right" className="w-80 bg-darker-blue border-l border-primary/20 p-0">
+            <SheetContent side="right" className="w-full sm:w-80 bg-darker-blue border-l border-primary/20 p-0">
               <div className="flex flex-col h-full">
                 {/* Header do Menu */}
                 <div className="flex items-center justify-between p-6 border-b border-primary/20">
