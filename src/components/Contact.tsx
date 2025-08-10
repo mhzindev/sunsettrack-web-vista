@@ -1,16 +1,25 @@
 import { Button } from '@/components/ui/button';
 import { Phone, ExternalLink } from 'lucide-react';
+import ContactForm from './ContactForm';
+
 const Contact = () => {
   return <section id="contact" className="py-20 bg-gradient-to-br from-dark-blue to-darker-blue">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-rethink">
-            Entre em <span className="text-primary">Contato</span>
-          </h2>
-          
-          <p className="text-xl text-white/80 mb-12 font-rethink">
-            Estamos prontos para atender você e encontrar a melhor solução para sua necessidade
-          </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-rethink">
+              Entre em <span className="text-primary">Contato</span>
+            </h2>
+            
+            <p className="text-xl text-white/80 mb-12 font-rethink">
+              Estamos prontos para atender você e encontrar a melhor solução para sua necessidade
+            </p>
+          </div>
+
+          {/* Contact Form */}
+          <div className="mb-16">
+            <ContactForm />
+          </div>
 
           {/* Contact Methods */}
           <div className="grid md:grid-cols-2 gap-8 mb-12">
