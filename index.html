@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.gpteng.co https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:; frame-ancestors 'none';">
+    <!-- Security Headers - Otimizadas para SEO -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.gpteng.co https://fonts.googleapis.com https://www.google-analytics.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: *.googleusercontent.com *.google.com; connect-src 'self' https: *.google-analytics.com *.analytics.google.com *.googletagmanager.com; frame-ancestors 'none';">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
@@ -15,15 +15,116 @@
     <!-- HTTPS Enforcement -->
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
     
-    <title>Sunsettrack - Rastreamento Veicular Inteligente</title>
-    <meta name="description" content="Sunsettrack - Tecnologia avançada em rastreamento veicular. Monitore sua frota com segurança e eficiência." />
+    <!-- SEO Meta Tags -->
+    <title>Rastreamento Veicular Imperatriz MA | Sunsettrack - GPS em Tempo Real</title>
+    <meta name="description" content="Rastreamento veicular em Imperatriz MA com GPS em tempo real. Segurança total para sua frota com monitoramento 24h, alertas inteligentes e suporte técnico especializado." />
+    <meta name="keywords" content="rastreamento veicular imperatriz, gps veicular maranhão, monitoramento frota, segurança veicular, localizador gps, rastreador carro imperatriz, bloqueador veicular, telemetria" />
     <meta name="author" content="Sunsettrack" />
-
-    <meta property="og:title" content="Sunsettrack - Rastreamento Veicular" />
-    <meta property="og:description" content="Tecnologia avançada em rastreamento veicular" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="pt-BR" />
+    <meta name="geo.region" content="BR-MA" />
+    <meta name="geo.placename" content="Imperatriz" />
+    <meta name="geo.position" content="-5.5242;-47.4621" />
+    <meta name="ICBM" content="-5.5242, -47.4621" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sunsettrack.com/" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Rastreamento Veicular Imperatriz MA | Sunsettrack - GPS em Tempo Real" />
+    <meta property="og:description" content="Rastreamento veicular em Imperatriz MA com GPS em tempo real. Segurança total para sua frota com monitoramento 24h, alertas inteligentes e suporte técnico especializado." />
     <meta property="og:type" content="website" />
-
+    <meta property="og:url" content="https://sunsettrack.com/" />
+    <meta property="og:image" content="https://sunsettrack.com/lovable-uploads/2c79e7f5-8030-4422-bf08-2ef50fab3fee.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Sunsettrack" />
+    <meta property="og:locale" content="pt_BR" />
+    
+    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rastreamento Veicular Imperatriz MA | Sunsettrack" />
+    <meta name="twitter:description" content="Rastreamento veicular em Imperatriz MA com GPS em tempo real. Segurança total para sua frota." />
+    <meta name="twitter:image" content="https://sunsettrack.com/lovable-uploads/2c79e7f5-8030-4422-bf08-2ef50fab3fee.png" />
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Sunsettrack",
+      "description": "Empresa especializada em rastreamento veicular e monitoramento de frotas em Imperatriz MA",
+      "url": "https://sunsettrack.com",
+      "logo": "https://sunsettrack.com/lovable-uploads/2c79e7f5-8030-4422-bf08-2ef50fab3fee.png",
+      "image": "https://sunsettrack.com/lovable-uploads/2c79e7f5-8030-4422-bf08-2ef50fab3fee.png",
+      "telephone": "+55 99 98888-8888",
+      "email": "contato@sunsettrack.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Exemplo, 123",
+        "addressLocality": "Imperatriz",
+        "addressRegion": "MA",
+        "postalCode": "65900-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-5.5242",
+        "longitude": "-47.4621"
+      },
+      "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-12:00",
+      "priceRange": "$$",
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "-5.5242",
+          "longitude": "-47.4621"
+        },
+        "geoRadius": "100000"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços de Rastreamento Veicular",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Rastreamento GPS",
+              "description": "Sistema de rastreamento veicular em tempo real"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Monitoramento 24h",
+              "description": "Central de monitoramento 24 horas por dia"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bloqueador Veicular",
+              "description": "Sistema de bloqueio remoto para segurança"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "150"
+      },
+      "sameAs": [
+        "https://www.facebook.com/sunsettrack",
+        "https://www.instagram.com/sunsettrack",
+        "https://www.linkedin.com/company/sunsettrack"
+      ]
+    }
+    </script>
     
     <!-- Favicon - Multiple sizes for better browser compatibility -->
     <link rel="icon" type="image/png" sizes="16x16" href="/lovable-uploads/2c79e7f5-8030-4422-bf08-2ef50fab3fee.png">

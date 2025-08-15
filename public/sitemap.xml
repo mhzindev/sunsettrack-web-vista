@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://sunsettrack.com/</loc>
+    <lastmod>2024-08-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sunsettrack.com/lovable-uploads/2c79e7f5-8030-4422-bf08-2ef50fab3fee.png</image:loc>
+      <image:title>Sunsettrack - Rastreamento Veicular</image:title>
+      <image:caption>Logo da Sunsettrack, empresa de rastreamento veicular em Imperatriz MA</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Seções da página -->
+  <url>
+    <loc>https://sunsettrack.com/#servicos</loc>
+    <lastmod>2024-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://sunsettrack.com/#tecnologia</loc>
+    <lastmod>2024-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://sunsettrack.com/#planos</loc>
+    <lastmod>2024-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://sunsettrack.com/#sobre</loc>
+    <lastmod>2024-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://sunsettrack.com/#contato</loc>
+    <lastmod>2024-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://sunsettrack.com/#faq</loc>
+    <lastmod>2024-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
