@@ -37,7 +37,7 @@ const Target = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {targets.map((target, index) => <div key={index} className="bg-darker-blue/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/20 transition-colors duration-300">
+          {targets.map((target, index) => <div key={index} className="bg-darker-blue/80 backdrop-blur-sm rounded-2xl p-8 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:transform hover:scale-105">
               <div className="text-4xl mb-4">{target.icon}</div>
               
               <h3 className="text-xl font-semibold text-white mb-4 font-rethink">

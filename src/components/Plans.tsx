@@ -83,10 +83,10 @@ const Plans = () => {
           {plans.map((plan, index) => (
             <div 
               key={index}
-              className={`relative rounded-2xl sm:rounded-3xl p-6 sm:p-8 border transition-colors duration-300 h-full ${
+              className={`relative rounded-2xl sm:rounded-3xl p-6 sm:p-8 border transition-all duration-300 hover:transform hover:scale-105 h-full ${
                 plan.highlighted 
                   ? 'bg-gradient-to-br from-primary/20 to-primary/5 border-primary shadow-xl shadow-primary/20' 
-                  : 'bg-dark-blue/50 border-primary/20'
+                  : 'bg-dark-blue/50 border-primary/20 hover:border-primary/40'
               }`}
             >
               {plan.highlighted && (
