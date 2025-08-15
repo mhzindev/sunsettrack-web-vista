@@ -36,17 +36,16 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="py-12 sm:py-16 lg:py-20 bg-darker-blue">
+    <section id="services" className="py-12 sm:py-16 lg:py-20 bg-darker-blue">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <header className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 font-rethink">
-            Serviços de <span className="text-primary">Rastreamento Veicular</span> em Imperatriz
+            Nossos <span className="text-primary">Serviços</span>
           </h2>
           <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto font-rethink">
-            Soluções completas em <strong>rastreamento veicular</strong> e <strong>monitoramento de frotas</strong> 
-            com tecnologia GPS avançada para máxima segurança em Imperatriz MA
+            Soluções completas em rastreamento veicular para atender todas as necessidades da sua empresa
           </p>
-        </header>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => (
