@@ -6,12 +6,13 @@ const About = () => {
             {/* Content */}
             <div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 font-rethink">
-                Sobre a <span className="text-primary">Sunsettrack</span>
+                Sunsettrack - <span className="text-primary">Rastreamento Veicular em Imperatriz MA</span>
               </h2>
               
               <p className="text-lg sm:text-xl text-white/80 mb-4 sm:mb-6 font-rethink leading-relaxed">
-                Com mais de 10 anos de experiência no mercado, a Sunsettrack é reconhecida 
-                pelo alto índice de recuperação de veículos roubados e pela excelência em tecnologia de rastreamento.
+                <strong>Empresa líder em rastreamento veicular em Imperatriz MA</strong> com mais de 10 anos 
+                de experiência. Reconhecida pelo alto índice de recuperação de veículos e excelência 
+                em tecnologia GPS para monitoramento de frotas.
               </p>
               
               <p className="text-sm sm:text-base text-white/70 mb-6 sm:mb-8 font-rethink leading-relaxed">Nossa missão é entregar segurança, controle e praticidade com tecnologia confiável. Nosso diferencial está na combinação de uma plataforma altamente intuitiva, que permite o monitoramento em tempo real por celular, computador ou tablet.</p>

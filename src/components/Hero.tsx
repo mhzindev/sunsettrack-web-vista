@@ -32,11 +32,14 @@ const Hero = () => {
             {/* Content */}
             <div className="text-center lg:text-left animate-fade-in order-2 lg:order-1">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 font-rethink leading-tight">
-                Rastreamento que
-                <span className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 bg-clip-text text-transparent block">Protege Sua Frota</span>
+                Rastreamento Veicular em Imperatriz MA
+                <span className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 bg-clip-text text-transparent block">GPS em Tempo Real</span>
               </h1>
               
-              <p className="text-base sm:text-lg lg:text-xl text-white/80 mb-6 sm:mb-8 font-rethink max-w-lg mx-auto lg:mx-0">Tecnologia avançada em rastreamento veicular. Segurança, eficiência e controle total da sua frota em tempo real.</p>
+              <p className="text-base sm:text-lg lg:text-xl text-white/80 mb-6 sm:mb-8 font-rethink max-w-lg mx-auto lg:mx-0">
+                <strong>Rastreamento veicular em Imperatriz MA</strong> com tecnologia GPS avançada. 
+                Monitore sua frota 24h, receba alertas inteligentes e tenha segurança total para seus veículos.
+              </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 font-rethink text-sm sm:text-base" onClick={scrollToContact}>
