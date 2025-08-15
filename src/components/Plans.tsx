@@ -68,17 +68,16 @@ const Plans = () => {
   };
 
   return (
-    <section id="planos" className="py-12 sm:py-16 lg:py-20 bg-darker-blue">
+    <section id="plans" className="py-12 sm:py-16 lg:py-20 bg-darker-blue">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <header className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 font-rethink">
-            Planos de <span className="text-primary">Rastreamento Veicular</span>
+            Planos e <span className="text-primary">Preços</span>
           </h2>
           <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto font-rethink">
-            Escolha o <strong>plano de rastreamento GPS</strong> ideal para sua frota em Imperatriz. 
-            Preços acessíveis com instalação gratuita e equipamento incluso.
+            Escolha o plano ideal para suas necessidades. Todos incluem instalação gratuita e equipamento incluso.
           </p>
-        </header>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {plans.map((plan, index) => (

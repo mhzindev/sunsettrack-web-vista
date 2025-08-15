@@ -1,13 +1,8 @@
-# Robots.txt - Sunsettrack
-# Permite indexação completa para melhor SEO
-
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Twitterbot
 Allow: /
@@ -17,11 +12,3 @@ Allow: /
 
 User-agent: *
 Allow: /
-Crawl-delay: 2
-
-# Sitemap location
-Sitemap: https://sunsettrack.com/sitemap.xml
-
-# Disallow sensitive areas (if any)
-# Disallow: /admin/
-# Disallow: /private/
