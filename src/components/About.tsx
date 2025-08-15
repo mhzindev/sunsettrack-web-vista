@@ -10,11 +10,10 @@ const About = () => {
               </h2>
               
               <p className="text-lg sm:text-xl text-white/80 mb-4 sm:mb-6 font-rethink leading-relaxed">
-                Com mais de 10 anos de experiência no mercado, a Sunsettrack é reconhecida 
-                pelo alto índice de recuperação de veículos roubados e pela excelência em tecnologia de rastreamento.
+                Com mais de 10 anos de experiência em rastreamento veicular, a Sunsettrack atende Imperatriz, Maranhão e região do Tocantins com excelência. Somos reconhecidos pelo alto índice de recuperação de veículos e tecnologia GPS de ponta.
               </p>
               
-              <p className="text-sm sm:text-base text-white/70 mb-6 sm:mb-8 font-rethink leading-relaxed">Nossa missão é entregar segurança, controle e praticidade com tecnologia confiável. Nosso diferencial está na combinação de uma plataforma altamente intuitiva, que permite o monitoramento em tempo real por celular, computador ou tablet.</p>
+              <p className="text-sm sm:text-base text-white/70 mb-6 sm:mb-8 font-rethink leading-relaxed">Nossa missão é entregar segurança automotiva, controle de frotas e praticidade com rastreamento confiável. Nosso diferencial está na plataforma S-PRO, que permite monitoramento veicular em tempo real via celular, computador ou tablet.</p>
 
               <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center">

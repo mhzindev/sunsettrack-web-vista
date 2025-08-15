@@ -9,7 +9,7 @@ const Contact = () => {
           </h2>
           
           <p className="text-lg sm:text-xl text-white/80 mb-8 sm:mb-12 font-rethink">
-            Estamos prontos para atender você e encontrar a melhor solução para sua necessidade
+            Atendemos Imperatriz, Maranhão e região. Nossa equipe está pronta para encontrar a melhor solução de rastreamento veicular para sua necessidade.
           </p>
 
           {/* Contact Methods */}

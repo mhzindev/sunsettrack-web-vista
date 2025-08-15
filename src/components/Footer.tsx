@@ -17,7 +17,7 @@ const Footer = () => {
               Sunset<span className="text-primary">track</span>
             </div>
             <p className="text-sm sm:text-base text-white/70 font-rethink mb-4 sm:mb-6 max-w-md">
-              Tecnologia avançada em rastreamento veicular. Protegemos o que é importante para você com soluções inteligentes e confiáveis.
+              Rastreamento veicular em Imperatriz, MA. Protegemos sua frota com GPS confiável, monitoramento 24h e tecnologia de segurança automotiva avançada.
             </p>
             <div className="flex space-x-3 sm:space-x-4">
               <button 
@@ -85,7 +85,10 @@ const Footer = () => {
           {/* Contato */}
           <div>
             <h4 className="text-white font-semibold mb-3 sm:mb-4 font-rethink text-sm sm:text-base">Contato</h4>
-            <div className="space-y-1 sm:space-y-2">
+            <address className="space-y-1 sm:space-y-2 not-italic">
+              <p className="text-xs sm:text-sm text-white/70 font-rethink">
+                Imperatriz, Maranhão
+              </p>
               <p className="text-xs sm:text-sm text-white/70 font-rethink">
                 WhatsApp: +55 99 99935-0533
               </p>
@@ -98,7 +101,7 @@ const Footer = () => {
               >
                 Área do Cliente
               </button>
-            </div>
+            </address>
           </div>
         </div>
 
