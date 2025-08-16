@@ -43,7 +43,7 @@ const Hero = () => {
                   Solicitar Orçamento
                 </Button>
                 
-                <Button variant="outline" size="lg" onClick={() => window.open('https://wa.me/5599999350533', '_blank')} className="border-white text-white hover:bg-white hover:text-darker-blue px-6 sm:px-8 py-3 font-rethink text-sm sm:text-base">
+                <Button variant="outline" size="lg" onClick={() => window.open('https://wa.me/5599999350533', '_blank')} className="-bottom-0 text-white hover:bg-white hover:text-darker-blue px-6 sm:px-8 py-3 font-rethink text-sm sm:text-base">
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   WhatsApp
                 </Button>
