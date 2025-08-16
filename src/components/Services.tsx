@@ -311,10 +311,19 @@ const Services = () => {
                     
                     {/* Action Buttons */}
                     <div className="flex space-x-2 pt-2">
-                      <Button size="sm" className="flex-1">
+                      <Button 
+                        size="sm" 
+                        className="flex-1"
+                        onClick={() => window.open('https://wa.me/5599999350533', '_blank')}
+                      >
                         Testar Funcionalidade
                       </Button>
-                      <Button size="sm" variant="outline" className="flex-1">
+                      <Button 
+                        size="sm" 
+                        variant="outline" 
+                        className="flex-1"
+                        onClick={() => window.open('https://wa.me/5599999350533', '_blank')}
+                      >
                         Saber Mais
                       </Button>
                     </div>
@@ -412,10 +421,19 @@ const Services = () => {
                 </div>
               </div>
               <div className="flex space-x-2 pt-4">
-                <Button size="sm" className="flex-1">
+                <Button 
+                  size="sm" 
+                  className="flex-1"
+                  onClick={() => window.open('https://wa.me/5599999350533', '_blank')}
+                >
                   Configurar Zonas
                 </Button>
-                <Button size="sm" variant="outline" className="flex-1">
+                <Button 
+                  size="sm" 
+                  variant="outline" 
+                  className="flex-1"
+                  onClick={() => window.open('https://wa.me/5599999350533', '_blank')}
+                >
                   Ver Detalhes
                 </Button>
               </div>
@@ -463,10 +481,19 @@ const Services = () => {
                 </div>
               </div>
               <div className="flex space-x-2 pt-4">
-                <Button size="sm" className="flex-1">
+                <Button 
+                  size="sm" 
+                  className="flex-1"
+                  onClick={() => window.open('https://wa.me/5599999350533', '_blank')}
+                >
                   Testar Bloqueio
                 </Button>
-                <Button size="sm" variant="outline" className="flex-1">
+                <Button 
+                  size="sm" 
+                  variant="outline" 
+                  className="flex-1"
+                  onClick={() => window.open('https://wa.me/5599999350533', '_blank')}
+                >
                   Configurar
                 </Button>
               </div>
