@@ -371,50 +371,104 @@ const Services = () => {
 
         {/* Additional Features */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-          <Card className="bg-gradient-to-br from-primary/20 to-transparent border-primary/20 hover:border-primary/40 transition-all duration-300">
-            <CardHeader>
-              <div className="flex items-center space-x-3">
-                <Shield className="w-6 h-6 text-primary" />
-                <CardTitle className="text-white font-rethink">Cerca Eletrônica</CardTitle>
+          <Card className="bg-dark-blue/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300 group">
+            <CardHeader className="pb-4">
+              <div className="flex items-start justify-between">
+                <div className="flex items-start space-x-4">
+                  <div className="text-primary flex-shrink-0">
+                    <Shield className="w-8 h-8" />
+                  </div>
+                  <div className="flex-1">
+                    <CardTitle className="text-lg sm:text-xl text-white font-rethink mb-2">
+                      Cerca Eletrônica
+                    </CardTitle>
+                    <CardDescription className="text-white/70 font-rethink text-sm sm:text-base">
+                      Defina áreas permitidas e receba alertas automáticos quando o veículo sair da zona autorizada
+                    </CardDescription>
+                  </div>
+                </div>
+                <div className="flex flex-col items-end space-y-1">
+                  <span className="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">
+                    Precisão 10m
+                  </span>
+                </div>
               </div>
             </CardHeader>
-            <CardContent>
-              <p className="text-white/70 font-rethink mb-4">
-                Defina áreas permitidas e receba alertas automáticos quando o veículo sair da zona autorizada.
-              </p>
-              <div className="bg-darker-blue/50 rounded-lg p-3 border border-primary/20">
-                <div className="flex justify-between text-sm">
-                  <span className="text-white/60">Zonas Configuradas:</span>
-                  <span className="text-primary">5 ativas</span>
+            <CardContent className="pt-0">
+              <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
+                <div className="space-y-2 text-sm text-white/80">
+                  <div className="flex justify-between">
+                    <span>Zonas Configuradas:</span>
+                    <span className="text-primary font-semibold">5 ativas</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Precisão:</span>
+                    <span className="text-green-400">10-50 metros</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Status:</span>
+                    <span className="text-blue-400">Monitorando</span>
+                  </div>
                 </div>
-                <div className="flex justify-between text-sm mt-1">
-                  <span className="text-white/60">Precisão:</span>
-                  <span className="text-green-400">10-50 metros</span>
-                </div>
+              </div>
+              <div className="flex space-x-2 pt-4">
+                <Button size="sm" className="flex-1">
+                  Configurar Zonas
+                </Button>
+                <Button size="sm" variant="outline" className="flex-1">
+                  Ver Detalhes
+                </Button>
               </div>
             </CardContent>
           </Card>
           
-          <Card className="bg-gradient-to-br from-primary/20 to-transparent border-primary/20 hover:border-primary/40 transition-all duration-300">
-            <CardHeader>
-              <div className="flex items-center space-x-3">
-                <Shield className="w-6 h-6 text-primary" />
-                <CardTitle className="text-white font-rethink">Bloqueio Remoto</CardTitle>
+          <Card className="bg-dark-blue/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300 group">
+            <CardHeader className="pb-4">
+              <div className="flex items-start justify-between">
+                <div className="flex items-start space-x-4">
+                  <div className="text-primary flex-shrink-0">
+                    <Shield className="w-8 h-8" />
+                  </div>
+                  <div className="flex-1">
+                    <CardTitle className="text-lg sm:text-xl text-white font-rethink mb-2">
+                      Bloqueio Remoto
+                    </CardTitle>
+                    <CardDescription className="text-white/70 font-rethink text-sm sm:text-base">
+                      Sistema de bloqueio à distância para proteção contra roubos e furtos
+                    </CardDescription>
+                  </div>
+                </div>
+                <div className="flex flex-col items-end space-y-1">
+                  <span className="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">
+                    &lt; 30s resposta
+                  </span>
+                </div>
               </div>
             </CardHeader>
-            <CardContent>
-              <p className="text-white/70 font-rethink mb-4">
-                Sistema de bloqueio à distância para proteção contra roubos e furtos.
-              </p>
-              <div className="bg-darker-blue/50 rounded-lg p-3 border border-primary/20">
-                <div className="flex justify-between text-sm">
-                  <span className="text-white/60">Tempo de Resposta:</span>
-                  <span className="text-primary">15-30 segundos</span>
+            <CardContent className="pt-0">
+              <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
+                <div className="space-y-2 text-sm text-white/80">
+                  <div className="flex justify-between">
+                    <span>Tempo de Resposta:</span>
+                    <span className="text-primary font-semibold">15-30 segundos</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Taxa de Sucesso:</span>
+                    <span className="text-green-400">98.5%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Disponibilidade:</span>
+                    <span className="text-blue-400">24/7</span>
+                  </div>
                 </div>
-                <div className="flex justify-between text-sm mt-1">
-                  <span className="text-white/60">Taxa de Sucesso:</span>
-                  <span className="text-green-400">98.5%</span>
-                </div>
+              </div>
+              <div className="flex space-x-2 pt-4">
+                <Button size="sm" className="flex-1">
+                  Testar Bloqueio
+                </Button>
+                <Button size="sm" variant="outline" className="flex-1">
+                  Configurar
+                </Button>
               </div>
             </CardContent>
           </Card>
