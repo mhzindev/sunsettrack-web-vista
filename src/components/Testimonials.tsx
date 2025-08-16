@@ -91,27 +91,27 @@ const Testimonials = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-16">
           {stats.map((stat, index) => {
           const IconComponent = stat.icon;
-          return <Card key={index} className="bg-gradient-to-br from-primary/20 to-transparent border border-primary/20 backdrop-blur-sm">
-                <CardContent className="p-6 text-center">
+          return <div key={index} className="relative rounded-2xl sm:rounded-3xl p-6 sm:p-8 bg-dark-blue/50 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:transform hover:scale-105">
+                <div className="text-center">
                   <div className="flex justify-center mb-4">
                     <div className="p-3 rounded-full bg-primary/20">
                       <IconComponent className="h-6 w-6 text-primary" />
                     </div>
                   </div>
-                  <div className="text-2xl sm:text-3xl font-bold text-white mb-1">
+                  <div className="text-2xl sm:text-3xl font-bold text-white mb-1 font-rethink">
                     {stat.value}
                   </div>
-                  <div className="text-primary font-semibold mb-1">
+                  <div className="text-primary font-semibold mb-1 font-rethink">
                     {stat.label}
                   </div>
-                  <div className="text-white/60 text-sm">
+                  <div className="text-white/60 text-sm font-rethink">
                     {stat.description}
                   </div>
-                </CardContent>
-              </Card>;
+                </div>
+              </div>;
         })}
         </div>
 
@@ -120,19 +120,19 @@ const Testimonials = () => {
           <Carousel className="w-full">
             <CarouselContent className="-ml-2 md:-ml-4">
               {testimonials.map(testimonial => <CarouselItem key={testimonial.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <Card className="h-full bg-gradient-to-br from-primary/10 to-transparent border border-primary/20 backdrop-blur-sm hover:border-primary/40 transition-all duration-300">
-                    <CardContent className="p-6">
+                  <div className="relative rounded-2xl sm:rounded-3xl p-6 sm:p-8 bg-dark-blue/50 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:transform hover:scale-105 h-full">
+                    <div className="h-full flex flex-col">
                       {/* Quote Icon */}
                       <div className="flex justify-between items-start mb-4">
                         <Quote className="h-8 w-8 text-primary/60" />
-                        {testimonial.verified && <div className="flex items-center gap-1 text-xs text-primary">
+                        {testimonial.verified && <div className="flex items-center gap-1 text-xs text-primary font-rethink">
                             <CheckCircle className="h-4 w-4" />
                             Verificado
                           </div>}
                       </div>
 
                       {/* Content */}
-                      <p className="text-white/90 mb-6 leading-relaxed">
+                      <p className="text-white/90 mb-6 leading-relaxed font-rethink flex-grow">
                         "{testimonial.content}"
                       </p>
 
@@ -143,28 +143,28 @@ const Testimonials = () => {
 
                       {/* Author */}
                       <div className="flex items-center gap-3 mb-4">
-                        <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-semibold">
+                        <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-semibold font-rethink">
                           {testimonial.avatar}
                         </div>
                         <div>
-                          <div className="font-semibold text-white">
+                          <div className="font-semibold text-white font-rethink">
                             {testimonial.name}
                           </div>
-                          <div className="text-white/60 text-sm">
+                          <div className="text-white/60 text-sm font-rethink">
                             {testimonial.role}
                           </div>
-                          <div className="text-primary text-sm">
+                          <div className="text-primary text-sm font-rethink">
                             {testimonial.company}
                           </div>
                         </div>
                       </div>
 
                       {/* Time Using */}
-                      <div className="text-white/60 text-xs border-t border-primary/10 pt-3">
+                      <div className="text-white/60 text-xs border-t border-primary/10 pt-3 font-rethink">
                         Cliente há {testimonial.timeUsing}
                       </div>
-                    </CardContent>
-                  </Card>
+                    </div>
+                  </div>
                 </CarouselItem>)}
             </CarouselContent>
             <CarouselPrevious className="hidden sm:flex" />
@@ -174,17 +174,15 @@ const Testimonials = () => {
 
         {/* CTA Section */}
         <div className="text-center">
-          <Card className="bg-gradient-to-r from-primary/20 to-primary/10 border border-primary/30 backdrop-blur-sm">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-white mb-4">
-                Seja nosso próximo <span className="text-primary">caso de sucesso</span>
-              </h3>
-              <p className="text-white/80 mb-6 max-w-2xl mx-auto">Junte-se a mais de 1.000 clientes que já protegem seus veículos com nossa tecnologia</p>
-              <Button onClick={handleWhatsAppClick} size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-3">
-                Quero Proteger Meu Veículo
-              </Button>
-            </CardContent>
-          </Card>
+          <div className="relative rounded-2xl sm:rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 transition-all duration-300 hover:border-primary/40">
+            <h3 className="text-2xl font-bold text-white mb-4 font-rethink">
+              Seja nosso próximo <span className="text-primary">caso de sucesso</span>
+            </h3>
+            <p className="text-white/80 mb-6 max-w-2xl mx-auto font-rethink">Junte-se a mais de 50.000 clientes que já protegem seus veículos com nossa tecnologia</p>
+            <Button onClick={handleWhatsAppClick} size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-3 font-rethink">
+              Quero Proteger Meu Veículo
+            </Button>
+          </div>
         </div>
       </div>
     </section>;
