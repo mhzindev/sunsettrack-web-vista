@@ -21,10 +21,10 @@ const Services = () => {
   }, {
     icon: <Users className="w-8 h-8" />,
     title: "Gestão de Motoristas",
-    description: "Controle de condutores, horários e comportamento de direção",
+    description: "Controle de condutores, horários e comportamento no trânsito",
     metrics: "Score: 0-100",
     demo: "driver-management",
-    technical: "Análise comportamental com IA e machine learning"
+    technical: "Análise de condução e comportamento no trânsito"
   }, {
     icon: <Bell className="w-8 h-8" />,
     title: "Alertas Inteligentes",
