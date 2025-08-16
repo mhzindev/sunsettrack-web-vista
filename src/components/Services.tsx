@@ -1,75 +1,73 @@
-
 import React, { useState } from 'react';
 import { Calendar, Search, Users, FileText, Smartphone, Bell, MapPin, Shield, BarChart3, Clock, Zap, Play } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-
 const Services = () => {
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
-
-  const functionalities = [
-    {
-      icon: <Search className="w-8 h-8" />,
-      title: "Rastreamento em tempo real 24h",
-      description: "Acompanhamento em tempo real da localização e status dos seus veículos",
-      metrics: "Atualização: 30 segundos",
-      demo: "live-tracking",
-      technical: "Sistema GPS/GLONASS com precisão de 3-5 metros"
-    },
-    {
-      icon: <Calendar className="w-8 h-8" />,
-      title: "Histórico de Rotas",
-      description: "Relatórios detalhados de trajetos, paradas e deslocamentos",
-      metrics: "Dados: 365 dias",
-      demo: "route-history",
-      technical: "Armazenamento de dados completo com análise de padrões"
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: "Gestão de Motoristas",
-      description: "Controle de condutores, horários e comportamento de direção",
-      metrics: "Score: 0-100",
-      demo: "driver-management",
-      technical: "Análise comportamental com IA e machine learning"
-    },
-    {
-      icon: <Bell className="w-8 h-8" />,
-      title: "Alertas Inteligentes",
-      description: "Alertas de movimento/ignição, excesso de velocidade e outros eventos importantes",
-      metrics: "Resposta: < 60s",
-      demo: "smart-alerts",
-      technical: "Sistema de notificações multichannel em tempo real"
-    },
-    {
-      icon: <FileText className="w-8 h-8" />,
-      title: "Relatórios Personalizados",
-      description: "Relatórios detalhados e customizáveis para análise da sua frota",
-      metrics: "Formatos: PDF, Excel",
-      demo: "custom-reports",
-      technical: "Engine de relatórios com mais de 50 métricas disponíveis"
-    },
-    {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: "Aplicativo Completo S-PRO",
-      description: "App completo para celular com todas as funcionalidades de monitoramento",
-      metrics: "iOS/Android",
-      demo: "mobile-app",
-      technical: "App nativo com sincronização offline e push notifications"
-    }
-  ];
-
-  const performanceMetrics = [
-    { label: "Precisão GPS", value: "99.8%", icon: <MapPin className="w-5 h-5" /> },
-    { label: "Uptime da Plataforma", value: "99.9%", icon: <Zap className="w-5 h-5" /> },
-    { label: "Tempo de Resposta", value: "< 30s", icon: <Clock className="w-5 h-5" /> },
-    { label: "Alertas Processados/dia", value: "50K+", icon: <BarChart3 className="w-5 h-5" /> }
-  ];
-
+  const functionalities = [{
+    icon: <Search className="w-8 h-8" />,
+    title: "Rastreamento em tempo real 24h",
+    description: "Acompanhamento em tempo real da localização e status dos seus veículos",
+    metrics: "Atualização: 30 segundos",
+    demo: "live-tracking",
+    technical: "Sistema GPS/GLONASS com precisão de 3-5 metros"
+  }, {
+    icon: <Calendar className="w-8 h-8" />,
+    title: "Histórico de Rotas",
+    description: "Relatórios detalhados de trajetos, paradas e deslocamentos",
+    metrics: "Dados: 365 dias",
+    demo: "route-history",
+    technical: "Armazenamento de dados completo com análise de padrões"
+  }, {
+    icon: <Users className="w-8 h-8" />,
+    title: "Gestão de Motoristas",
+    description: "Controle de condutores, horários e comportamento de direção",
+    metrics: "Score: 0-100",
+    demo: "driver-management",
+    technical: "Análise comportamental com IA e machine learning"
+  }, {
+    icon: <Bell className="w-8 h-8" />,
+    title: "Alertas Inteligentes",
+    description: "Alertas de movimento/ignição, excesso de velocidade e outros eventos importantes",
+    metrics: "Resposta: < 60s",
+    demo: "smart-alerts",
+    technical: "Sistema de notificações multichannel em tempo real"
+  }, {
+    icon: <FileText className="w-8 h-8" />,
+    title: "Relatórios Personalizados",
+    description: "Relatórios detalhados e customizáveis para análise da sua frota",
+    metrics: "Formatos: PDF, Excel",
+    demo: "custom-reports",
+    technical: "Engine de relatórios com mais de 50 métricas disponíveis"
+  }, {
+    icon: <Smartphone className="w-8 h-8" />,
+    title: "Aplicativo Completo S-PRO",
+    description: "App completo para celular com todas as funcionalidades de monitoramento",
+    metrics: "iOS/Android",
+    demo: "mobile-app",
+    technical: "App nativo com sincronização offline e push notifications"
+  }];
+  const performanceMetrics = [{
+    label: "Precisão GPS",
+    value: "99.8%",
+    icon: <MapPin className="w-5 h-5" />
+  }, {
+    label: "Uptime da Plataforma",
+    value: "99.9%",
+    icon: <Zap className="w-5 h-5" />
+  }, {
+    label: "Tempo de Resposta",
+    value: "< 30s",
+    icon: <Clock className="w-5 h-5" />
+  }, {
+    label: "Alertas Processados/dia",
+    value: "50K+",
+    icon: <BarChart3 className="w-5 h-5" />
+  }];
   const renderDemo = (demoType: string) => {
     switch (demoType) {
       case 'live-tracking':
-        return (
-          <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
+        return <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
             <div className="flex items-center justify-between mb-3">
               <span className="text-sm text-primary">Veículo Online</span>
               <div className="flex items-center space-x-1">
@@ -91,11 +89,9 @@ const Services = () => {
                 <span className="text-blue-400">Em movimento</span>
               </div>
             </div>
-          </div>
-        );
+          </div>;
       case 'route-history':
-        return (
-          <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
+        return <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
             <div className="flex items-center justify-between mb-3">
               <span className="text-sm text-primary">Rota de Hoje</span>
               <span className="text-xs text-white/70">8h30 - 17h45</span>
@@ -116,11 +112,9 @@ const Services = () => {
                 <span>Atual: Zona Norte - 17h45</span>
               </div>
             </div>
-          </div>
-        );
+          </div>;
       case 'driver-management':
-        return (
-          <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
+        return <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
             <div className="flex items-center justify-between mb-3">
               <span className="text-sm text-primary">João Silva</span>
               <div className="flex items-center space-x-1">
@@ -142,11 +136,9 @@ const Services = () => {
                 <span className="text-yellow-400">2 esta semana</span>
               </div>
             </div>
-          </div>
-        );
+          </div>;
       case 'smart-alerts':
-        return (
-          <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
+        return <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
             <div className="space-y-3">
               <div className="flex items-center space-x-2 p-2 bg-red-500/20 rounded border-l-2 border-red-500">
                 <Bell className="w-4 h-4 text-red-400" />
@@ -163,11 +155,9 @@ const Services = () => {
                 </div>
               </div>
             </div>
-          </div>
-        );
+          </div>;
       case 'custom-reports':
-        return (
-          <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
+        return <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
             <div className="flex items-center justify-between mb-3">
               <span className="text-sm text-primary">Relatório Semanal</span>
               <Button size="sm" variant="outline" className="h-6 text-xs">
@@ -191,11 +181,9 @@ const Services = () => {
               </div>
               <span className="text-xs text-white/60">Eficiência: 75%</span>
             </div>
-          </div>
-        );
+          </div>;
       case 'mobile-app':
-        return (
-          <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
+        return <div className="bg-darker-blue/80 rounded-lg p-4 border border-primary/30">
             <div className="flex items-center justify-center mb-3">
               <div className="bg-dark-blue/50 rounded-lg p-3 w-24 h-32 border border-primary/20">
                 <div className="space-y-2">
@@ -214,15 +202,12 @@ const Services = () => {
               <p className="text-sm text-primary mb-1">S-PRO Mobile</p>
               <p className="text-xs text-white/70">Todas as funcionalidades na palma da mão</p>
             </div>
-          </div>
-        );
+          </div>;
       default:
         return null;
     }
   };
-
-  return (
-    <section id="services" className="py-12 sm:py-16 lg:py-20 bg-darker-blue">
+  return <section id="services" className="py-12 sm:py-16 lg:py-20 bg-darker-blue">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
@@ -236,8 +221,7 @@ const Services = () => {
 
         {/* Performance Metrics */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12 sm:mb-16">
-          {performanceMetrics.map((metric, index) => (
-            <Card key={index} className="bg-dark-blue/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300">
+          {performanceMetrics.map((metric, index) => <Card key={index} className="bg-dark-blue/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300">
               <CardContent className="p-4 text-center">
                 <div className="text-primary mb-2 flex justify-center">
                   {metric.icon}
@@ -249,20 +233,12 @@ const Services = () => {
                   {metric.label}
                 </div>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Main Functionalities */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
-          {functionalities.map((functionality, index) => (
-            <Card 
-              key={index}
-              className={`bg-dark-blue/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300 cursor-pointer ${
-                expandedCard === index ? 'ring-1 ring-primary/50' : ''
-              }`}
-              onClick={() => setExpandedCard(expandedCard === index ? null : index)}
-            >
+          {functionalities.map((functionality, index) => <Card key={index} className={`bg-dark-blue/50 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-all duration-300 cursor-pointer ${expandedCard === index ? 'ring-1 ring-primary/50' : ''}`} onClick={() => setExpandedCard(expandedCard === index ? null : index)}>
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between">
                   <div className="flex items-start space-x-4">
@@ -282,11 +258,7 @@ const Services = () => {
                     <span className="text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">
                       {functionality.metrics}
                     </span>
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      className="text-primary hover:text-primary/80 hover:bg-primary/10 h-6 px-2"
-                    >
+                    <Button size="sm" variant="ghost" className="text-primary hover:text-primary/80 hover:bg-primary/10 h-6 px-2">
                       <Play className="w-3 h-3 mr-1" />
                       Demo
                     </Button>
@@ -294,8 +266,7 @@ const Services = () => {
                 </div>
               </CardHeader>
               
-              {expandedCard === index && (
-                <CardContent className="pt-0 animate-fade-in">
+              {expandedCard === index && <CardContent className="pt-0 animate-fade-in">
                   <div className="space-y-4">
                     {/* Technical Info */}
                     <div className="bg-darker-blue/50 rounded-lg p-3 border border-primary/20">
@@ -311,27 +282,16 @@ const Services = () => {
                     
                     {/* Action Buttons */}
                     <div className="flex space-x-2 pt-2">
-                      <Button 
-                        size="sm" 
-                        className="flex-1"
-                        onClick={() => window.open('https://wa.me/5599999350533', '_blank')}
-                      >
+                      <Button size="sm" className="flex-1" onClick={() => window.open('https://wa.me/5599999350533', '_blank')}>
                         Testar Funcionalidade
                       </Button>
-                      <Button 
-                        size="sm" 
-                        variant="outline" 
-                        className="flex-1"
-                        onClick={() => window.open('https://wa.me/5599999350533', '_blank')}
-                      >
+                      <Button size="sm" variant="outline" className="flex-1" onClick={() => window.open('https://wa.me/5599999350533', '_blank')}>
                         Saber Mais
                       </Button>
                     </div>
                   </div>
-                </CardContent>
-              )}
-            </Card>
-          ))}
+                </CardContent>}
+            </Card>)}
         </div>
 
         {/* How It Works Section */}
@@ -361,9 +321,7 @@ const Services = () => {
                 <span className="text-2xl font-bold text-primary">2</span>
               </div>
               <h4 className="text-lg font-semibold text-white mb-2 font-rethink">Processamento</h4>
-              <p className="text-white/70 font-rethink text-sm">
-                IA analisa os dados e gera insights inteligentes automaticamente
-              </p>
+              <p className="text-white/70 font-rethink text-sm">Sistema analisa os dados e limites mínimos e máximose gera os alertas</p>
             </div>
             
             <div className="text-center">
@@ -421,19 +379,10 @@ const Services = () => {
                 </div>
               </div>
               <div className="flex space-x-2 pt-4">
-                <Button 
-                  size="sm" 
-                  className="flex-1"
-                  onClick={() => window.open('https://wa.me/5599999350533', '_blank')}
-                >
+                <Button size="sm" className="flex-1" onClick={() => window.open('https://wa.me/5599999350533', '_blank')}>
                   Configurar Zonas
                 </Button>
-                <Button 
-                  size="sm" 
-                  variant="outline" 
-                  className="flex-1"
-                  onClick={() => window.open('https://wa.me/5599999350533', '_blank')}
-                >
+                <Button size="sm" variant="outline" className="flex-1" onClick={() => window.open('https://wa.me/5599999350533', '_blank')}>
                   Ver Detalhes
                 </Button>
               </div>
@@ -481,19 +430,10 @@ const Services = () => {
                 </div>
               </div>
               <div className="flex space-x-2 pt-4">
-                <Button 
-                  size="sm" 
-                  className="flex-1"
-                  onClick={() => window.open('https://wa.me/5599999350533', '_blank')}
-                >
+                <Button size="sm" className="flex-1" onClick={() => window.open('https://wa.me/5599999350533', '_blank')}>
                   Testar Bloqueio
                 </Button>
-                <Button 
-                  size="sm" 
-                  variant="outline" 
-                  className="flex-1"
-                  onClick={() => window.open('https://wa.me/5599999350533', '_blank')}
-                >
+                <Button size="sm" variant="outline" className="flex-1" onClick={() => window.open('https://wa.me/5599999350533', '_blank')}>
                   Configurar
                 </Button>
               </div>
@@ -501,8 +441,6 @@ const Services = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Services;
